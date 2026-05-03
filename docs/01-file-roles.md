@@ -48,4 +48,6 @@ Use evidence when a future reader may ask, "Why do we believe this?"
 
 Reusable Codex prompts for common workflows, such as starting a session, preparing a context pack, or updating Atlas after work.
 
+The bootstrap prompt is the adoption prompt for adding Atlas Memory surfaces to a target repo. It should make Codex inspect first, preserve existing project identity, adapt from repo evidence, and report what changed.
+
 Prompts should be practical and repo-neutral unless they live inside a specific project.

@@ -13,5 +13,6 @@ Start here for the public Atlas Memory for Codex docs.
 
 ## Templates and prompts
 
+- [Bootstrap Atlas Memory prompt](../prompts/codex-bootstrap-atlas-memory.md): The recommended adoption prompt to paste into Codex inside a target repo.
 - [Minimal template](../templates/minimal/README.md): A small starter layout for adding Atlas Memory to a repo.
 - [Prompts](../prompts/codex-start-session.md): Reusable Codex prompts begin with session startup and context maintenance.

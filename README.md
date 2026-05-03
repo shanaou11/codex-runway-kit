@@ -26,6 +26,18 @@ Atlas Memory for Codex gives a repo a small set of durable Markdown surfaces for
 
 ## Quick start
 
+### Option A: Ask Codex to install Atlas Memory
+
+1. Open Codex in the target repository.
+2. Paste or reference [prompts/codex-bootstrap-atlas-memory.md](prompts/codex-bootstrap-atlas-memory.md).
+3. Let Codex inspect the repo before editing.
+4. Have Codex adapt the minimal Atlas Memory surfaces to the repo using observable evidence.
+5. Review the branch, files changed, assumptions, and validation results before merging.
+
+This is a prompt-driven Markdown workflow. It does not auto-install itself, add a CLI, or replace the target repo's existing docs.
+
+### Option B: Install manually
+
 1. Copy `templates/minimal/` into a repository.
 2. Edit `AGENTS.md` with repo-specific operating rules.
 3. Fill in `Atlas/00-Start Here.md` with the main read-first map.
