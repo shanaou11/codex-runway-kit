@@ -26,7 +26,7 @@ Atlas Memory for Codex gives a repo a small set of durable Markdown surfaces for
 
 ## Quick start
 
-### Option A: Ask Codex to install Atlas Memory
+### Option A: Ask Codex to adopt Atlas Memory
 
 1. Open Codex in the target repository.
 2. Paste or reference [prompts/codex-bootstrap-atlas-memory.md](prompts/codex-bootstrap-atlas-memory.md).
