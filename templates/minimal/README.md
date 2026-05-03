@@ -6,7 +6,7 @@ Short project description.
 
 This repo uses a small Markdown continuity layer so humans and Codex can restart work with less context loss.
 
-This minimal template can be copied manually. The recommended public workflow is to open Codex in the target repo and let it adapt the template using the [bootstrap prompt](../../prompts/codex-bootstrap-atlas-memory.md) from the Atlas Memory for Codex source repo.
+This minimal template can be copied manually. The recommended public workflow is to open Codex in the target repo and let it adapt the template using the Atlas Memory for Codex bootstrap prompt: `prompts/codex-bootstrap-atlas-memory.md` from the source repo.
 
 Read first:
 
