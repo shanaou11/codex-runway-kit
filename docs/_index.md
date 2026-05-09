@@ -10,6 +10,7 @@ Start here for the public Atlas Memory for Codex docs.
 - [Variable Rigor](03-variable-rigor.md): Describes Level 1, Level 2, and Level 3 update expectations.
 - [Safe Boundaries](04-safe-boundaries.md): Explains how to mark areas that should not be casually edited.
 - [Promotion Rules](05-promotion-rules.md): Shows how raw observations become durable repo memory.
+- [Note Role and Size Guardrail](06-note-role-and-size-guardrail.md): Sets soft review triggers so notes keep one clear job without turning line count into hard law.
 
 ## Templates and prompts
 
