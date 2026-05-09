@@ -8,13 +8,13 @@ Status: draft
 
 ## Read first next time
 
-- `AGENTS.md`
-- `Atlas/00-Start Here.md`
+- [AGENTS.md](../AGENTS.md)
+- [Atlas/00-Start Here.md](<../Atlas/00-Start Here.md>)
 - Any files directly related to the next task
 
 ## Open work
 
-- Add unresolved work here, or link to `queue/00-work-queue.md`.
+- Add unresolved work here, or link to [queue/00-work-queue.md](../queue/00-work-queue.md).
 
 ## Do not redo
 
