@@ -36,6 +36,17 @@ Do not mention non-public repositories, client work, or real non-public project 
 - Mark uncertainty instead of converting guesses into facts.
 - Use truth and freshness labels from `docs/02-truth-and-freshness-labels.md` when a note's status matters.
 
+## Cross-Repo Orchestration / Runway Rules
+
+This repo can participate in autonomous cross-repo Codex orchestration through an external orchestration controller or a local orchestration environment.
+
+- Repo-local `AGENTS.md` rules remain authoritative for this repository's boundaries, source truth, and protected areas.
+- Source truth stays in this repo. Cross-repo reports should summarize and point to local docs rather than duplicate them.
+- The requested autonomy level controls what Codex may do here. Report-only mode must not edit this repo.
+- Level 1 low-risk docs hygiene is allowed only when the prompt explicitly selects that level.
+- Higher-risk documentation refactors require checker and validator gates plus explicit authorization where local rules require it.
+- Protected areas require explicit authorization, including policy-defining docs, public positioning changes, prompt contracts, and any material that would broaden or reinterpret repo intent.
+
 ## Git workflow
 
 For repo changes:
