@@ -26,9 +26,11 @@ ATC/Council is an optional coordination pattern for larger Codex-assisted runs.
 
 - ATC keeps the mission, scope, authority, stop conditions, and landing report visible.
 - Council separates responsibilities so a run can include editing, checking, validation, and recommendation without blurring those jobs together.
-- The workflow can be used by one person, one Codex session, or several coordinated sessions.
+- The workflow can be used by one person, one Codex session, or several manually coordinated sessions.
 
 This is a documentation and prompting pattern. It does not automate orchestration by itself.
+
+The public starter surface is [Codex Prompt: Run ATC/Council Mission](../prompts/codex-run-atc-council-mission.md). Use it for a bounded repo mission after reading local instructions and the relevant repo docs.
 
 ### Ground Crew Roles
 

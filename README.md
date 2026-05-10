@@ -62,10 +62,11 @@ This is a prompt-driven Markdown workflow. It does not auto-install itself, add 
 For larger work, combine Atlas Memory with a light ATC/Council run:
 
 1. Define the mission, scope, authority, and stop conditions.
-2. Assign practical ground crew roles such as editor, checker, validator, and navigator.
-3. Work on a branch and keep changes focused.
-4. Validate the result with repo-appropriate checks.
-5. Land with a concise run report: branch, files changed, validation, risks, and recommended next phase.
+2. Paste or adapt [prompts/codex-run-atc-council-mission.md](prompts/codex-run-atc-council-mission.md) for a visible preflight and closeout.
+3. Assign practical ground crew roles such as editor, checker, validator, and navigator.
+4. Work on a branch and keep changes focused.
+5. Validate the result with repo-appropriate checks.
+6. Land with a concise run report: branch, files changed, validation, risks, and recommended next phase.
 
 ## Minimal file layout
 

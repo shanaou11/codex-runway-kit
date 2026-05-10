@@ -16,5 +16,6 @@ Start here for the public Codex Runway Kit docs.
 ## Templates and prompts
 
 - [Bootstrap Atlas Memory prompt](../prompts/codex-bootstrap-atlas-memory.md): The recommended adoption prompt to paste into Codex inside a target repo.
+- [ATC/Council mission prompt](../prompts/codex-run-atc-council-mission.md): A small starter prompt for bounded repo missions with visible preflight, role separation, validation, and closeout.
 - [Minimal template](../templates/minimal/README.md): A small starter layout for adding Atlas Memory to a repo.
 - [Prompts](../prompts/codex-start-session.md): Reusable Codex prompts begin with session startup and context maintenance.
