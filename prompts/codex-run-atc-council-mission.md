@@ -45,16 +45,41 @@ Visible Council preflight before edits:
 - Validator: state what validation evidence will be collected.
 - Authority: state whether to execute, report first, or stop.
 
+Ground Crew Dispatch before edits:
+- Declare one execution mode:
+  - delegated ground crew mode, if separate Codex sessions, agents, or task owners will actually do the work and their role outputs will be shown; or
+  - single-session role-split mode, with a short reason, if one Codex session will carry the roles.
+- Do not claim delegated ground crew mode unless separate role work and outputs are visible.
+- Assign only the roles the mission needs. Common roles are:
+  - ATC: keeps mission, branch, authority, stop conditions, and landing report clear.
+  - Reader or State Keeper: gathers repo instructions, current state, and directly affected files.
+  - Editor: makes the focused change within allowed writes.
+  - Checker: challenges scope, wording, consistency, forbidden surfaces, and likely regressions.
+  - Validator: runs or records repo-appropriate validation.
+  - Navigator: updates indexes, maps, or handoffs only when needed.
+- Give each role a short work order:
+  - role name
+  - assigned task
+  - allowed surfaces
+  - forbidden surfaces
+  - expected report-back
+- Keep forbidden surfaces explicit. Include out-of-scope repos, protected files, secrets, private material, production config, generated files, or any area the mission does not authorize.
+- Report back visibly when each role finishes, even if the report is brief.
+
 Execution:
 1. Inspect before editing.
-2. Make the smallest useful repo-local change.
-3. Keep examples fictional or generic.
-4. Preserve existing project identity and source truth.
-5. Update navigation when adding durable docs or prompts.
-6. Run repo-appropriate validation, including git diff --check when Git is available.
+2. Show the Council preflight and Ground Crew Dispatch before edits.
+3. Make the smallest useful repo-local change.
+4. Keep examples fictional or generic.
+5. Preserve existing project identity and source truth.
+6. Update navigation when adding durable docs or prompts.
+7. Run repo-appropriate validation, including git diff --check when Git is available.
+8. Show separate Checker and Validator verdicts before landing.
 
 Closeout:
 - Branch name:
+- Execution mode:
+- Ground Crew Dispatch summary:
 - Files changed:
 - Validation performed:
 - Summary of what changed:
