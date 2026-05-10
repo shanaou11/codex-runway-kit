@@ -8,6 +8,8 @@ Core principle:
 
 This is a review aid, not a hard law. A long note is not automatically wrong. Reassess when note size starts to hide the note's role, weaken navigation, or reduce reviewer confidence.
 
+Split by role first. Use line count only as a review trigger.
+
 ## Role rule
 
 Navigation notes route; evidence notes explain; handoffs transfer; queues prioritize; prompts instruct.
@@ -46,13 +48,11 @@ Treat these as triggers for review, not mechanical limits.
 - Readers must scroll through archive or history before finding the route.
 - The note's role is unclear without prior context.
 
-## MyBook exception
+## Raw witness or custody-sensitive exception
 
-Do not apply mechanical splitting to diary or raw witness material.
+Do not apply mechanical splitting to raw witness or custody-sensitive material.
 
-For MyBook:
-
-- `Diary Raw/` can stay long if it preserves raw witness.
-- Journal entries should not be split just to satisfy Codex.
-- Atlas and workflow notes can use this guardrail.
-- Raw emotional or creative notes should be judged by custody and voice, not line count.
+- Source-preserving raw notes can stay long when integrity matters more than compactness.
+- Journal-style or witness-style entries should not be split just to satisfy Codex.
+- Atlas and workflow notes can still use this guardrail normally.
+- Raw material should be judged by custody and voice, not line count.
