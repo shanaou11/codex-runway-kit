@@ -8,8 +8,9 @@ Before making changes, read:
 
 1. `README.md`
 2. `docs/_index.md`
-3. `docs/00-atlas-contract.md`
-4. Any file directly affected by the requested change
+3. `docs/07-codex-runway-kit.md`
+4. `docs/00-atlas-contract.md`
+5. Any file directly affected by the requested change
 
 For template changes, also inspect the matching files under `templates/minimal/`.
 
@@ -17,8 +18,9 @@ For template changes, also inspect the matching files under `templates/minimal/`
 
 This repository is public. Keep language clear, practical, and conservative.
 
-- Do not overclaim what Atlas Memory does.
-- Do not describe it as production software, a CLI, a platform, RAG, vector memory, chatbot memory, or agent consciousness.
+- Do not overclaim what Codex Runway Kit or Atlas Memory does.
+- Do not describe it as production software, a CLI, a package, a plugin, a platform, RAG, vector memory, chatbot memory, or agent consciousness.
+- Describe skills only as future or draft reusable workflow surfaces unless a finished local skill exists and documents its own installation and use.
 - Do not write manifesto-style copy.
 - Prefer concise examples that a stranger can understand quickly.
 
@@ -26,7 +28,7 @@ This repository is public. Keep language clear, practical, and conservative.
 
 Use only fictional or generic examples.
 
-Do not mention non-public repositories, client work, or real non-public project names.
+Do not mention non-public repositories, organizations, projects, examples, or real non-public project names.
 
 ## Documentation rules
 

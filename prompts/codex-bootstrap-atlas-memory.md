@@ -35,7 +35,7 @@ Required behavior:
    - Mark assumptions as `draft` or `unverified`.
    - Keep wording conservative and practical.
    - Use fictional or generic examples only.
-   - Do not mention private/internal examples, client work, or real non-public project names.
+   - Do not mention non-public repositories, organizations, projects, examples, or real non-public project names.
 
 5. Evidence folder:
    - Add `evidence/` only when useful for this repo right now, such as for decision notes, investigation output, migration notes, reproduction details, or validation summaries.
