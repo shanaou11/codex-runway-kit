@@ -1,9 +1,10 @@
 # Documentation Index
 
-Start here for the public Atlas Memory for Codex docs.
+Start here for the public Codex Runway Kit docs.
 
 ## Core docs
 
+- [Codex Runway Kit](07-codex-runway-kit.md): Explains the broader public framing, including Atlas Memory, ATC/Council workflow, ground crew roles, handoffs, prompts, guardrails, and future draft skills.
 - [Atlas Contract](00-atlas-contract.md): Defines the repo-local continuity contract, mandatory surfaces, truth hierarchy, update expectations, and non-goals.
 - [File Roles](01-file-roles.md): Explains what each Atlas Memory file or folder is responsible for.
 - [Truth and Freshness Labels](02-truth-and-freshness-labels.md): Defines simple labels such as `current`, `stale`, `draft`, and `verified`.
