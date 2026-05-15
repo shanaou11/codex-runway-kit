@@ -2,9 +2,13 @@
 
 Short project description.
 
+## Codex Runway Kit
+
+This repo can use Codex Runway Kit patterns to brief, steer, hand off, validate, and land Codex-assisted work.
+
 ## Atlas Memory
 
-This repo uses a small Markdown continuity layer so humans and Codex can restart work with less context loss.
+Atlas Memory is the starter continuity layer. It keeps enough Markdown context for humans and Codex to restart work with less context loss.
 
 This minimal template can be copied manually. The recommended public workflow is to open Codex in the target repo and let it adapt the template using the Codex Runway Kit Atlas Memory bootstrap prompt: `prompts/codex-bootstrap-atlas-memory.md` from the source repo.
 

@@ -2,7 +2,7 @@
 
 Status: draft
 
-Use this file as the fast map for restarting work in this repo.
+Use this file as the fast map for restarting work in this repo. Keep it as a route map, not a duplicate of the main docs.
 
 ## Read first
 
@@ -21,6 +21,12 @@ Use this file as the fast map for restarting work in this repo.
 ## Safe boundaries
 
 List repo areas that should not be casually edited.
+
+## Runway notes
+
+- Mission briefs define the current task, authority, allowed writes, forbidden writes, stop conditions, validation, and landing report.
+- `AGENTS.md` is the local law for agent work in this repo.
+- Atlas Memory is the continuity layer; it should point to source truth rather than copying large source material.
 
 ## Notes for future sessions
 

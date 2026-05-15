@@ -5,6 +5,7 @@ Start here for the public Codex Runway Kit docs.
 ## Core docs
 
 - [Codex Runway Kit](07-codex-runway-kit.md): Explains the broader public framing, including Atlas Memory, ATC/Council workflow, ground crew roles, handoffs, prompts, guardrails, and future draft skills.
+- [Runway Operations](08-runway-operations.md): Explains mission briefs, local law, Atlas Memory, ATC/Council review, ground sites, validation, and landing reports.
 - [Atlas Contract](00-atlas-contract.md): Defines the repo-local continuity contract, mandatory surfaces, truth hierarchy, update expectations, and non-goals.
 - [File Roles](01-file-roles.md): Explains what each Atlas Memory file or folder is responsible for.
 - [Truth and Freshness Labels](02-truth-and-freshness-labels.md): Defines simple labels such as `current`, `stale`, `draft`, and `verified`.
@@ -15,6 +16,7 @@ Start here for the public Codex Runway Kit docs.
 
 ## Templates and prompts
 
+- [Atlas Start Here](../Atlas/00-Start%20Here.md): Fast route map for this public repo.
 - [Bootstrap Atlas Memory prompt](../prompts/codex-bootstrap-atlas-memory.md): The recommended adoption prompt to paste into Codex inside a target repo.
 - [ATC/Council mission prompt](../prompts/codex-run-atc-council-mission.md): A small starter prompt for bounded repo missions with visible preflight, role separation, validation, and closeout.
 - [Minimal template](../templates/minimal/README.md): A small starter layout for adding Atlas Memory to a repo.

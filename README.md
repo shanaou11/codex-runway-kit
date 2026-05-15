@@ -1,25 +1,28 @@
 # Codex Runway Kit
 
-A practical Markdown-native, Git-native kit for making Codex-assisted repository work easier to start, steer, hand off, and review.
+A practical Markdown-native, Git-native framework for directing Codex-assisted repository work through mission briefs, local law, Atlas Memory, ATC/Council review, ground-site discipline, handoffs, validation, and landing reports.
 
 ## What problem it solves
 
-Codex-assisted repo work often needs more than one prompt. Context has to be found, boundaries have to be respected, unfinished work has to be handed off, and larger efforts need a simple way to coordinate readers, editors, checkers, and validators.
+Codex-assisted repo work often needs more than one prompt. Context has to be found, local boundaries have to be respected, unfinished work has to be handed off, and larger efforts need a simple way to coordinate readers, editors, checkers, and validators.
 
-Codex Runway Kit gives a repo a small set of reusable public patterns for that work: Atlas Memory, ATC/Council coordination, ground crew roles, handoffs, prompts, guardrails, and future draft workflow surfaces.
+Codex Runway Kit gives a repo a small set of reusable public patterns for that work. The kit helps a human or agent say what mission is being flown, which repo is the ground site, what local law applies, what may be changed, how the work will be checked, and what landing report should be left behind.
 
 ## What it is
 
 - A public template and documentation kit for repo-local Codex workflows.
-- A lightweight convention for `AGENTS.md`, Atlas maps, handoffs, queues, evidence notes, prompts, and review gates.
-- A way to make Codex sessions easier to restart, steer, check, validate, and hand off.
+- A lightweight convention for mission briefs, `AGENTS.md`, Atlas maps, handoffs, queues, evidence notes, prompts, review gates, validation, and landing reports.
+- A way to make Codex sessions easier to start, restart, steer, check, validate, and hand off.
 - A place for small reusable workflow surfaces that may later become prompts, templates, or draft skills.
 - Normal Markdown in normal Git history.
 
 ## Core layers
 
+- **Mission brief:** the short instruction that defines the goal, target repo, authority, allowed writes, forbidden writes, stop conditions, validation, and reporting expectations.
+- **Local law:** the repo's own `AGENTS.md` and project docs. Local law controls what Codex may do in that repo.
 - **Atlas Memory:** the first concrete module. It keeps repo-local continuity in Markdown through operating rules, maps, handoffs, queues, evidence notes, truth/freshness labels, and reusable prompts.
 - **ATC/Council workflow:** an optional coordination pattern for larger runs. ATC keeps the mission, scope, stop conditions, and landing report clear; Council roles split work across implementation, checking, validation, and recommendation.
+- **Ground sites:** target repositories where work happens. The kit encourages the steering context to summarize and point rather than copy source truth away from the ground site.
 - **Ground crew roles:** small role labels for practical repo work, such as reader, editor, checker, validator, and navigator. They are meant to clarify responsibility, not create ceremony.
 - **Handoffs and prompts:** reusable session-start, context-pack, bootstrap, and update prompts that help Codex and humans restart with less context loss.
 - **Guardrails:** plain-language boundaries for public wording, safe editing, truth labels, note size, and promotion of temporary observations into durable docs.
@@ -36,7 +39,26 @@ Codex Runway Kit gives a repo a small set of reusable public patterns for that w
 
 ## Quick start
 
-### Option A: Ask Codex to adopt Atlas Memory
+### Option A: Run a small mission brief
+
+Use this when the target repo already has enough instructions to work safely.
+
+1. Open Codex in the target repository.
+2. Read the repo's `AGENTS.md`, `README.md`, and docs index if present.
+3. Give Codex a short mission brief:
+   - mission goal
+   - target repo
+   - branch expectation
+   - allowed writes
+   - forbidden writes
+   - validation required
+   - landing report required
+4. Keep work on a branch and validate before landing.
+5. End with a concise landing report: branch, files changed, validation, risks, and next gate.
+
+The [Runway Operations](docs/08-runway-operations.md) doc gives a reusable public shape for mission briefs, local law, ground sites, validation, and landing reports.
+
+### Option B: Ask Codex to adopt Atlas Memory
 
 Atlas Memory is the best starting point because it is the current concrete module in the kit.
 
@@ -48,7 +70,7 @@ Atlas Memory is the best starting point because it is the current concrete modul
 
 This is a prompt-driven Markdown workflow. It does not auto-install itself, add a CLI, or replace the target repo's existing docs.
 
-### Option B: Install manually
+### Option C: Install manually
 
 1. Copy `templates/minimal/` into a repository.
 2. Edit `AGENTS.md` with repo-specific operating rules.
@@ -57,7 +79,7 @@ This is a prompt-driven Markdown workflow. It does not auto-install itself, add 
 5. Use `queue/00-work-queue.md` for active work and unresolved follow-ups.
 6. Add evidence notes only when a decision, bug, migration, or high-risk change needs support.
 
-### Option C: Use the broader runway pattern
+### Option D: Use the broader runway pattern
 
 For larger work, combine Atlas Memory with a light ATC/Council run:
 
@@ -67,6 +89,21 @@ For larger work, combine Atlas Memory with a light ATC/Council run:
 4. Work on a branch and keep changes focused.
 5. Validate the result with repo-appropriate checks.
 6. Land with a concise run report: branch, files changed, validation, risks, and recommended next phase.
+
+## What is real today
+
+Real today:
+
+- Public Markdown docs and templates.
+- Reusable prompt files for bootstrap, session start, context packs, Atlas updates, and ATC/Council missions.
+- A minimal Atlas Memory starter layout.
+- Public doctrine for mission briefs, local law, ATC/Council review, ground sites, validation, and landing reports.
+
+Draft or future-facing:
+
+- Packaged skills, plugins, CLIs, automation controllers, or hosted services.
+- Any claim that this kit automatically orchestrates work across repositories.
+- Any claim that Atlas Memory is external memory, vector memory, RAG, or a replacement for project source truth.
 
 ## Minimal file layout
 
@@ -89,6 +126,6 @@ Codex Runway Kit is for maintainers, solo builders, teams, and coding agents tha
 
 ## Current status
 
-This repo is an early public template and workflow kit. Atlas Memory is the first concrete module. The broader ATC/Council, ground crew, guardrail, prompt, and future-skill surfaces are intentionally small and expected to evolve as public examples clarify what is worth keeping.
+This repo is an early public template and workflow kit. Atlas Memory is the first concrete module, but the public frame is broader: reusable runway practice for briefing, steering, checking, validating, and landing Codex-assisted repo work. The ATC/Council, ground crew, guardrail, prompt, and future-skill surfaces are intentionally small and expected to evolve as public examples clarify what is worth keeping.
 
 Start with [docs/_index.md](docs/_index.md) for the public documentation map.

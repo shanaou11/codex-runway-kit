@@ -9,8 +9,10 @@ Before making changes, read:
 1. `README.md`
 2. `docs/_index.md`
 3. `docs/07-codex-runway-kit.md`
-4. `docs/00-atlas-contract.md`
-5. Any file directly affected by the requested change
+4. `docs/08-runway-operations.md`
+5. `docs/00-atlas-contract.md`
+6. `Atlas/00-Start Here.md`
+7. Any file directly affected by the requested change
 
 For template changes, also inspect the matching files under `templates/minimal/`.
 
@@ -23,6 +25,7 @@ This repository is public. Keep language clear, practical, and conservative.
 - Describe skills only as future or draft reusable workflow surfaces unless a finished local skill exists and documents its own installation and use.
 - Do not write manifesto-style copy.
 - Prefer concise examples that a stranger can understand quickly.
+- Frame Atlas Memory as the first module or continuity layer inside the broader Runway Kit, not as the whole product.
 
 ## Examples
 
@@ -43,7 +46,9 @@ Do not mention non-public repositories, organizations, projects, examples, or re
 This repo can participate in autonomous cross-repo Codex orchestration through an external orchestration controller or a local orchestration environment.
 
 - Repo-local `AGENTS.md` rules remain authoritative for this repository's boundaries, source truth, and protected areas.
+- A mission brief may narrow work for a run, but it does not silently replace repo-local law.
 - Source truth stays in this repo. Cross-repo reports should summarize and point to local docs rather than duplicate them.
+- Target repos, or ground sites, remain the source of truth for their own code, docs, tests, configuration, and local rules.
 - The requested autonomy level controls what Codex may do here. Report-only mode must not edit this repo.
 - Level 1 low-risk docs hygiene is allowed only when the prompt explicitly selects that level.
 - Higher-risk documentation refactors require checker and validator gates plus explicit authorization where local rules require it.

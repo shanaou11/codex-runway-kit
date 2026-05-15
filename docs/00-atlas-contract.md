@@ -2,7 +2,7 @@
 
 Atlas Memory is the first module in Codex Runway Kit. It is a repo-local continuity convention that keeps the important context for humans and Codex in Markdown files that live in the same Git history as the work.
 
-It is meant to help future sessions restart cleanly. It is not meant to make decisions automatically or replace the source files, tests, issues, pull requests, or normal project docs.
+It is meant to help future sessions restart cleanly. It is not the whole Runway Kit: mission briefs, local law, ATC/Council review, validation, and landing reports are broader runway practices around this continuity layer. Atlas Memory is not meant to make decisions automatically or replace the source files, tests, issues, pull requests, or normal project docs.
 
 ## Public contract
 
