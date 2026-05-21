@@ -4,6 +4,8 @@ Use this when a repo task is large enough to benefit from a short preflight, cle
 
 This is a prompt-driven workflow. It does not install anything, automate orchestration by itself, or replace the repo's normal docs, tests, issues, pull requests, or maintainer judgment.
 
+Do not use this prompt to inflate a tiny obvious task into theater. For small bounded work, inspect first, make the focused change, validate, and report.
+
 ```text
 You are helping run a small ATC/Council mission in this repository.
 

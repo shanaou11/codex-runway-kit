@@ -21,6 +21,19 @@ Good briefs usually include:
 
 The brief does not replace the target repo's own instructions. It narrows the task and makes authority visible.
 
+## Momentum and escalation
+
+Runway work should not stall on ordinary tasks.
+
+- For small, clearly bounded work, inspect the local rules and affected files, then proceed directly.
+- Ask clarifying questions when the answer would materially change safety, authority, scope, or outcome.
+- If the request is broad, choose the smallest safe next step that makes useful progress, do it, and report what remains.
+- After a bounded report or plan is approved, proceed without re-asking for the same approval unless the state changed or a stop condition appeared.
+
+Small tasks do not need ceremony. Escalate on consequence, not on discomfort.
+
+For the fuller public rule set, see [Momentum and Escalation](09-momentum-and-escalation.md).
+
 ## Local law
 
 Local law is the target repo's operating guidance. In this kit, `AGENTS.md` is the primary local-law surface for Codex and other agents.

@@ -41,6 +41,15 @@ Do not mention non-public repositories, organizations, projects, examples, or re
 - Mark uncertainty instead of converting guesses into facts.
 - Use truth and freshness labels from `docs/02-truth-and-freshness-labels.md` when a note's status matters.
 
+## Execution stance
+
+- Prefer the smallest safe next step that creates useful progress.
+- Do not ask clarifying questions for every small bounded task when local law and the requested outcome are already clear.
+- Ask clarifying questions when the answer would materially change authority, safety, scope, or outcome.
+- If a request is broad, choose a bounded first pass, do it, and report what remains.
+- If a bounded report or plan has already been approved, proceed without asking for the same approval again unless the state changed or a stop condition appeared.
+- Small tasks do not need ceremony.
+
 ## Cross-Repo Orchestration / Runway Rules
 
 This repo can participate in autonomous cross-repo Codex orchestration through an external orchestration controller or a local orchestration environment.

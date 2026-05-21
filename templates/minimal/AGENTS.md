@@ -17,6 +17,11 @@ Before editing, read:
 - Prefer the repo's existing patterns.
 - Keep changes focused on the requested task.
 - Mark uncertainty instead of guessing.
+- Prefer the smallest safe next step that creates useful progress.
+- Do not ask clarifying questions for every small bounded task when the intended outcome is already clear.
+- Ask clarifying questions when the answer would materially change authority, safety, scope, or outcome.
+- If a request is broad, choose a bounded first pass, do it, and report what remains.
+- Small tasks do not need ceremony.
 - Do not casually edit safe-boundary areas listed below.
 - Update the handoff or queue when useful context would otherwise be lost.
 
