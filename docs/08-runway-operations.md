@@ -98,6 +98,8 @@ Common planning lanes:
 
 Label execution honestly. Actual delegated work means separate sessions, agents, or people produced separate reports. Manually coordinated sessions should say so. A single Codex session can still use role-split thinking, but it should not claim actual delegation. Shell parallelism, branch lanes, and role labels are not actual delegation.
 
+Delegated lanes should also be cleaned up intentionally. When a delegated session or agent has reported and no explicit follow-up is queued, close or release that lane after capturing its output. Leave a lane idle only with a named reason such as an expected follow-up, integration pause, file arrival, or active branch/artifact. Final synthesis should state agent or lane cleanup status.
+
 The reusable public prompt is [Codex Prompt: Run Review Council Planning + Drafting](../prompts/codex-run-review-council-planning-drafting.md).
 
 ## Ground sites and source truth

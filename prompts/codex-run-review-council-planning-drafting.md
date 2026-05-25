@@ -44,6 +44,7 @@ Council truth labels:
 - Execution shape: actual delegated sessions / manually coordinated sessions / single-session role-split.
 - Do not claim actual delegation unless separate sessions, agents, or people produced separate reports.
 - Shell parallelism, branch lanes, and role labels are not actual delegation.
+- Delegated lane cleanup: close or release a delegated session after its report is captured unless a named follow-up remains.
 
 Parallel lanes:
 - Vision lane: define the goal, user questions, success shape, and non-goals.
@@ -86,6 +87,7 @@ Closeout:
 - Summary of what changed:
 - Checker verdict:
 - Validator verdict:
+- Agent/lane cleanup: all delegated lanes closed or released / intentionally left open with reason / no delegated lanes used
 - Stop conditions or next gate:
 - Recommended next phase:
 - Uncertainty or gated follow-up:

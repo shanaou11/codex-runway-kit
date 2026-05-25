@@ -52,6 +52,7 @@ Ground Crew Dispatch before edits:
   - delegated ground crew mode, if separate Codex sessions, agents, or task owners will actually do the work and their role outputs will be shown; or
   - single-session role-split mode, with a short reason, if one Codex session will carry the roles.
 - Do not claim delegated ground crew mode unless separate role work and outputs are visible.
+- If a delegated session, agent, or task owner has reported and no explicit follow-up is queued, close or release that lane after capturing its output.
 - Assign only the roles the mission needs. Common roles are:
   - ATC: keeps mission, branch, authority, stop conditions, and landing report clear.
   - Reader or State Keeper: gathers repo instructions, current state, and directly affected files.
@@ -87,6 +88,7 @@ Closeout:
 - Summary of what changed:
 - Checker verdict:
 - Validator verdict:
+- Agent/lane cleanup: all delegated lanes closed or released / intentionally left open with reason / no delegated lanes used
 - Stop conditions or next gate:
 - Recommended next phase:
 - Uncertainty or gated follow-up:
