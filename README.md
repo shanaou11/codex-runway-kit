@@ -21,7 +21,7 @@ Codex Runway Kit gives a repo a small set of reusable public patterns for that w
 - **Mission brief:** the short instruction that defines the goal, target repo, authority, allowed writes, forbidden writes, stop conditions, validation, and reporting expectations.
 - **Local law:** the repo's own `AGENTS.md` and project docs. Local law controls what Codex may do in that repo.
 - **Atlas Memory:** the first concrete module. It keeps repo-local continuity in Markdown through operating rules, maps, handoffs, queues, evidence notes, truth/freshness labels, and reusable prompts.
-- **ATC/Council workflow:** an optional coordination pattern for larger runs. ATC keeps the mission, scope, stop conditions, and landing report clear; Council roles split work across implementation, checking, validation, and recommendation.
+- **ATC/Council workflow:** an optional coordination pattern for larger runs. ATC keeps the mission, scope, stop conditions, and landing report clear; Council roles split work across implementation, checking, validation, recommendation, and larger planning or drafting when useful.
 - **Ground sites:** target repositories where work happens. The kit encourages the steering context to summarize and point rather than copy source truth away from the ground site.
 - **Ground crew roles:** small role labels for practical repo work, such as reader, editor, checker, validator, and navigator. They are meant to clarify responsibility, not create ceremony.
 - **Handoffs and prompts:** reusable session-start, context-pack, bootstrap, and update prompts that help Codex and humans restart with less context loss.
@@ -90,12 +90,15 @@ For larger work, combine Atlas Memory with a light ATC/Council run:
 5. Validate the result with repo-appropriate checks.
 6. Land with a concise run report: branch, files changed, validation, risks, and recommended next phase.
 
+When the output is a larger plan, spec, roadmap, doctrine note, or module direction, use [prompts/codex-run-review-council-planning-drafting.md](prompts/codex-run-review-council-planning-drafting.md) instead. It keeps planning lanes, source-truth checks, sequencing, drafting, checker, and validator work visible without claiming automation that the kit does not provide.
+
 ## What is real today
 
 Real today:
 
 - Public Markdown docs and templates.
 - Reusable prompt files for bootstrap, session start, context packs, Atlas updates, and ATC/Council missions.
+- A public Review Council Planning + Drafting prompt for larger artifact-producing work.
 - A minimal Atlas Memory starter layout.
 - Public doctrine for mission briefs, local law, ATC/Council review, ground sites, validation, and landing reports.
 

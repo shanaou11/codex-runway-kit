@@ -46,11 +46,12 @@ ATC/Council is an optional coordination pattern for larger Codex-assisted runs.
 
 - ATC keeps the mission, scope, authority, stop conditions, and landing report visible.
 - Council separates responsibilities so a run can include editing, checking, validation, and recommendation without blurring those jobs together.
+- For larger plans, specs, roadmaps, doctrine notes, or module direction, Council can also separate planning and drafting lanes so the artifact skeleton begins while other lanes inspect current state, source truth, structure, sequencing, and risks.
 - The workflow can be used by one person, one Codex session, or several manually coordinated sessions.
 
 This is a documentation and prompting pattern. It does not automate orchestration by itself.
 
-The public starter surface is [Codex Prompt: Run ATC/Council Mission](../prompts/codex-run-atc-council-mission.md). Use it for a bounded repo mission after reading local instructions and the relevant repo docs.
+The public starter surface is [Codex Prompt: Run ATC/Council Mission](../prompts/codex-run-atc-council-mission.md). Use it for a bounded repo mission after reading local instructions and the relevant repo docs. For bigger artifact-producing work, use [Codex Prompt: Run Review Council Planning + Drafting](../prompts/codex-run-review-council-planning-drafting.md).
 
 ### Ground Crew Roles
 
@@ -87,4 +88,5 @@ Future skills may become a reusable workflow surface for Codex-assisted repo wor
 3. Add prompts only for workflows that repeat.
 4. Add guardrails where future sessions could cause avoidable damage.
 5. Use ATC/Council only when the work is large enough to benefit from role separation.
-6. Document future skills as drafts until they are real, tested, and locally supported.
+6. Use Review Council Planning + Drafting when the desired output is a larger plan, spec, roadmap, doctrine note, or module direction.
+7. Document future skills as drafts until they are real, tested, and locally supported.

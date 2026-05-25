@@ -22,6 +22,7 @@ Use this map to restart work in the public Codex Runway Kit repo.
 - [../docs/00-atlas-contract.md](../docs/00-atlas-contract.md): Atlas Memory continuity contract.
 - [../prompts/codex-bootstrap-atlas-memory.md](../prompts/codex-bootstrap-atlas-memory.md): prompt for adding Atlas Memory to a target repo.
 - [../prompts/codex-run-atc-council-mission.md](../prompts/codex-run-atc-council-mission.md): prompt for bounded ATC/Council missions.
+- [../prompts/codex-run-review-council-planning-drafting.md](../prompts/codex-run-review-council-planning-drafting.md): prompt for larger Review Council planning and drafting missions.
 - [../templates/minimal/README.md](../templates/minimal/README.md): minimal starter template.
 
 ## Scope reminder

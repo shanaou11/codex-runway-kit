@@ -20,5 +20,6 @@ Start here for the public Codex Runway Kit docs.
 - [Atlas Start Here](../Atlas/00-Start%20Here.md): Fast route map for this public repo.
 - [Bootstrap Atlas Memory prompt](../prompts/codex-bootstrap-atlas-memory.md): The recommended adoption prompt to paste into Codex inside a target repo.
 - [ATC/Council mission prompt](../prompts/codex-run-atc-council-mission.md): A small starter prompt for bounded repo missions with visible preflight, role separation, validation, and closeout.
+- [Review Council Planning + Drafting prompt](../prompts/codex-run-review-council-planning-drafting.md): A public prompt for larger plans, specs, roadmaps, doctrine notes, or module direction that benefit from non-linear planning and drafting lanes.
 - [Minimal template](../templates/minimal/README.md): A small starter layout for adding Atlas Memory to a repo.
 - [Prompts](../prompts/codex-start-session.md): Reusable Codex prompts begin with session startup and context maintenance.

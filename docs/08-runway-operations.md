@@ -79,6 +79,27 @@ Common roles:
 
 Small edits do not need ceremony. Use Council language when it clarifies responsibility, not as theater.
 
+### Review Council planning and drafting
+
+When the expected output is a durable plan, spec, roadmap, doctrine note, or module direction, use Review Council as a planning pattern rather than only an edit/check/validate pattern.
+
+The useful move is non-linear work: one lane can start the artifact skeleton while other lanes inspect current state, source truth, structure, sequencing, risks, and validation. The coordinator integrates reports as they arrive instead of waiting for every discovery pass to finish before drafting begins.
+
+Common planning lanes:
+
+- Vision: goal, user questions, success shape, and non-goals.
+- Current state: existing docs, implementation, strengths, gaps, and overclaims.
+- Source truth: supported claims, assumptions, missing evidence, and uncertainty.
+- Structure: document shape, information architecture, or user journey.
+- Sequencing: phases, independent slices, risks, and stop gates.
+- Drafting: artifact skeleton and integration notes.
+- Checker: overreach, contradictions, and public/private boundary issues.
+- Validator: repo-appropriate validation and closeout evidence.
+
+Label execution honestly. Actual delegated work means separate sessions, agents, or people produced separate reports. Manually coordinated sessions should say so. A single Codex session can still use role-split thinking, but it should not claim actual delegation. Shell parallelism, branch lanes, and role labels are not actual delegation.
+
+The reusable public prompt is [Codex Prompt: Run Review Council Planning + Drafting](../prompts/codex-run-review-council-planning-drafting.md).
+
 ## Ground sites and source truth
 
 A ground site is the target repo where the actual work lives. When a mission spans steering notes and a target repo, the target repo remains the source of truth for its own code, docs, tests, configuration, and local rules.
@@ -117,6 +138,7 @@ Real today:
 - Public docs, templates, and prompts.
 - A minimal Atlas Memory starter layout.
 - A reusable ATC/Council prompt for bounded missions.
+- A reusable Review Council Planning + Drafting prompt for larger artifact-producing work.
 - Public doctrine for local law, mission briefs, ground sites, validation, and landing reports.
 
 Not claimed today:
