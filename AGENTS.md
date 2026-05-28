@@ -71,7 +71,9 @@ For repo changes:
 2. Create or switch to a purpose-named branch before editing.
 3. Make focused changes.
 4. Run basic validation, including `git diff --check`.
-5. Commit with a clear message.
-6. Push the branch to `origin`.
+5. For non-trivial work, include a closeout learning loop: note any repeatable failure mode, confusion, or risk discovered; add the smallest reasonable prevention when safe; record a visible follow-up when prevention is too large; or say no useful guard was found.
+6. Report cleanup status and avoid leaving unnecessary branch or handoff debt.
+7. Commit with a clear message.
+8. Push the branch to `origin`.
 
 Do not merge to `main` unless the user explicitly asks.

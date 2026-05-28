@@ -118,11 +118,14 @@ Reusable runway practice should:
 
 Validation should match the repo and risk level. For docs-only work, lightweight validation may be enough: `git status`, final diff review, `git diff --check`, and any available Markdown checks. For code or higher-risk work, use the repo's tests, linters, builds, or manual checks.
 
+Non-trivial work should also include a closeout learning loop. Before calling the run done, ask whether the work revealed a repeatable failure mode, delay, confusion, or risk. Add the smallest reasonable prevention when it fits the task, such as a focused check, clearer instruction, template note, validation step, or parked follow-up. If no useful guard was found, say that briefly instead of inventing extra process.
+
 A landing report should make the end state easy to review:
 
 - Run location.
 - Target repo.
 - Branch.
+- Cleanup status for branches, handoffs, delegated lanes, or parked follow-ups.
 - Commit hash, if committed.
 - Push status, if pushed.
 - Files changed.

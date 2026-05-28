@@ -24,6 +24,7 @@ Before editing, read:
 - Small tasks do not need ceremony.
 - Do not casually edit safe-boundary areas listed below.
 - Update the handoff or queue when useful context would otherwise be lost.
+- For non-trivial work, run a closeout learning loop: note any repeatable failure mode, confusion, or risk; add the smallest reasonable prevention when safe; record a visible follow-up when prevention is too large; or say no useful guard was found.
 
 ## Safe boundaries
 
@@ -36,4 +37,4 @@ Example:
 
 ## Git workflow
 
-Use a branch for changes. Commit and push only when the user asks or when this repo's workflow requires it.
+Use a branch for changes. Commit and push only when the user asks or when this repo's workflow requires it. Report cleanup status and avoid leaving unnecessary branch or handoff debt.
