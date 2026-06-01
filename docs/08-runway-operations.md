@@ -120,6 +120,15 @@ Validation should match the repo and risk level. For docs-only work, lightweight
 
 Non-trivial work should also include a closeout learning loop. Before calling the run done, ask whether the work revealed a repeatable failure mode, delay, confusion, or risk. Add the smallest reasonable prevention when it fits the task, such as a focused check, clearer instruction, template note, validation step, or parked follow-up. If no useful guard was found, say that briefly instead of inventing extra process.
 
+For stronger closeout discipline, use two visible final-report lines:
+
+- `Learning loop: none`, `Learning loop: applied guard`, or `Learning loop: parked follow-up`.
+- `Durable capture: chat-only`, `Durable capture: written at [path]`, `Durable capture: queued at [path]`, or `Durable capture: blocked by stop gate`.
+
+Use `none` only when the run did not reveal a repeatable failure mode, delay, confusion, or risk. Use `applied guard` when the prevention was added in the same run. Use `parked follow-up` when the prevention is too large or needs a later decision.
+
+Durable capture should stay small and repo-local. Use an existing owner surface such as local law, docs, Atlas maps, the next-session handoff, the work queue, a template, or a prompt. Do not create a new memory surface by default. Do not capture when the run is report-only, the owner surface is unclear, the material is sensitive or private, or the capture would broaden the repo's intent.
+
 A landing report should make the end state easy to review:
 
 - Run location.
@@ -132,6 +141,7 @@ A landing report should make the end state easy to review:
 - Docs added, if any.
 - Validation performed.
 - Boundary checks and anything intentionally not changed.
+- Learning loop and durable capture status for non-trivial work.
 - Remaining risks, unknowns, or next gates.
 
 The landing report is not a replacement for a pull request, release note, or issue. It is the compact handoff that lets the next reader see what happened.

@@ -72,8 +72,12 @@ For repo changes:
 3. Make focused changes.
 4. Run basic validation, including `git diff --check`.
 5. For non-trivial work, include a closeout learning loop: note any repeatable failure mode, confusion, or risk discovered; add the smallest reasonable prevention when safe; record a visible follow-up when prevention is too large; or say no useful guard was found.
-6. Report cleanup status and avoid leaving unnecessary branch or handoff debt.
-7. Commit with a clear message.
-8. Push the branch to `origin`.
+6. Include `Learning loop: none`, `Learning loop: applied guard`, or `Learning loop: parked follow-up` in the final report for non-trivial work.
+7. Include `Durable capture: chat-only`, `Durable capture: written at [path]`, `Durable capture: queued at [path]`, or `Durable capture: blocked by stop gate` in the final report for non-trivial work.
+8. When `Learning loop:` is `applied guard` or `parked follow-up`, use the smallest appropriate durable surface already in this repo, such as `docs/`, `Atlas/`, `session/Next session handoff.md`, or `queue/00-work-queue.md`. Do not create a new memory surface by default.
+9. Do not perform durable capture when the run is report-only, the owner surface is unclear, the material is sensitive or private, or the capture would broaden repo intent.
+10. Report cleanup status and avoid leaving unnecessary branch or handoff debt.
+11. Commit with a clear message.
+12. Push the branch to `origin`.
 
 Do not merge to `main` unless the user explicitly asks.

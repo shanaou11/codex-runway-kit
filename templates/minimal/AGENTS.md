@@ -25,6 +25,10 @@ Before editing, read:
 - Do not casually edit safe-boundary areas listed below.
 - Update the handoff or queue when useful context would otherwise be lost.
 - For non-trivial work, run a closeout learning loop: note any repeatable failure mode, confusion, or risk; add the smallest reasonable prevention when safe; record a visible follow-up when prevention is too large; or say no useful guard was found.
+- For non-trivial work, include `Learning loop: none`, `Learning loop: applied guard`, or `Learning loop: parked follow-up` in the final report.
+- For non-trivial work, include `Durable capture: chat-only`, `Durable capture: written at [path]`, `Durable capture: queued at [path]`, or `Durable capture: blocked by stop gate` in the final report.
+- When `Learning loop:` is `applied guard` or `parked follow-up`, use the smallest appropriate existing durable surface, such as `docs/`, `Atlas/`, `session/Next session handoff.md`, or `queue/00-work-queue.md`.
+- Do not perform durable capture when the run is report-only, the owner surface is unclear, the material is sensitive or private, or the capture would broaden repo intent.
 
 ## Safe boundaries
 
