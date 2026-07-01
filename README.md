@@ -20,7 +20,7 @@ Codex Runway Kit gives a repo a small set of reusable public patterns for that w
 
 - **Mission brief:** the short instruction that defines the goal, target repo, authority, allowed writes, forbidden writes, stop conditions, validation, and reporting expectations.
 - **Local law:** the repo's own `AGENTS.md` and project docs. Local law controls what Codex may do in that repo.
-- **Atlas Memory:** the first concrete module. It keeps repo-local continuity in Markdown through operating rules, maps, handoffs, queues, evidence notes, truth/freshness labels, and reusable prompts.
+- **Atlas Memory:** the first concrete module. It keeps repo-local continuity in Markdown through operating rules, maps, handoffs, queues, optional evidence notes, truth/freshness labels, and repeatable prompts when useful.
 - **ATC/Council workflow:** an optional coordination pattern for larger runs. ATC keeps the mission, scope, stop conditions, and landing report clear; Council roles split work across implementation, checking, validation, recommendation, and larger planning or drafting when useful.
 - **Ground sites:** target repositories where work happens. The kit encourages the steering context to summarize and point rather than copy source truth away from the ground site.
 - **Ground crew roles:** small role labels for practical repo work, such as reader, editor, checker, validator, and navigator. They are meant to clarify responsibility, not create ceremony.
@@ -78,6 +78,7 @@ This is a prompt-driven Markdown workflow. It does not auto-install itself, add 
 4. Keep `session/Next session handoff.md` updated when a work session ends.
 5. Use `queue/00-work-queue.md` for active work and unresolved follow-ups.
 6. Add evidence notes only when a decision, bug, migration, or high-risk change needs support.
+7. Add reusable prompts only when the repo has Codex workflows worth repeating.
 
 ### Option D: Use the broader runway pattern
 
@@ -117,11 +118,9 @@ docs/_index.md
 Atlas/00-Start Here.md
 session/Next session handoff.md
 queue/00-work-queue.md
-evidence/
-prompts/
 ```
 
-The minimal template in this repo keeps only the starter surfaces. Add `evidence/` and project-specific docs when the work needs them.
+The minimal template in this repo keeps only the starter surfaces. Add `evidence/` when a decision or risky change needs support, and add `prompts/` when the repo has repeatable Codex workflows.
 
 ## Intended audience
 

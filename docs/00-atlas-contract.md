@@ -14,12 +14,12 @@ An Atlas-enabled repo should make these things easy to find:
 - A start-here map for the repo.
 - A next-session handoff.
 - A visible work queue.
-- Evidence for decisions or changes that need support.
-- Reusable prompts for common Codex workflows.
+- Evidence for decisions or changes that need support, when that support is needed.
+- Reusable prompts for common Codex workflows, when the repo has repeatable workflows.
 
-## Mandatory surfaces
+## Minimal and optional surfaces
 
-The minimal public shape is:
+The minimal public starter shape is:
 
 ```text
 AGENTS.md
@@ -28,10 +28,16 @@ docs/_index.md
 Atlas/00-Start Here.md
 session/Next session handoff.md
 queue/00-work-queue.md
+```
+
+Optional add-on surfaces:
+
+```text
+evidence/
 prompts/
 ```
 
-Use `evidence/` when a change needs supporting notes, investigation output, reproduction details, screenshots, logs, or decision records. A repo may add more docs, indexes, or maps as needed.
+Use `evidence/` when a change needs supporting notes, investigation output, reproduction details, screenshots, logs, or decision records. Use `prompts/` when a repo has common Codex workflows worth repeating. A repo may add more docs, indexes, maps, prompts, or evidence folders as needed.
 
 ## Truth hierarchy
 
