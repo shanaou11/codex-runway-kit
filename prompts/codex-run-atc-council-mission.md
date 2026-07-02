@@ -23,6 +23,7 @@ Target branch:
 Authority:
 [Observe only / edit allowed / commit allowed / push allowed.]
 Do not merge to main unless explicitly authorized.
+If authority is observe-only or report-only, inspect and report only. Do not edit files, stage, commit, push, merge, or perform durable capture.
 
 Allowed writes:
 [List paths or areas that may be changed.]
@@ -52,6 +53,7 @@ Ground Crew Dispatch before edits:
   - delegated ground crew mode, if separate Codex sessions, agents, or task owners will actually do the work and their role outputs will be shown; or
   - single-session role-split mode, with a short reason, if one Codex session will carry the roles.
 - Do not claim delegated ground crew mode unless separate role work and outputs are visible.
+- Shell parallelism, branch lanes, and role labels are not actual delegation. If separate sessions, agents, or people did not produce separate reports, label the run as single-session role-split or simulated lanes.
 - If a delegated session, agent, or task owner has reported and no explicit follow-up is queued, close or release that lane after capturing its output.
 - Assign only the roles the mission needs. Common roles are:
   - ATC: keeps mission, branch, authority, stop conditions, and landing report clear.
@@ -72,7 +74,7 @@ Ground Crew Dispatch before edits:
 Execution:
 1. Inspect before editing.
 2. Show the Council preflight and Ground Crew Dispatch before edits.
-3. Make the smallest useful repo-local change.
+3. Make the smallest useful repo-local change only when edit authority is granted.
 4. Keep examples fictional or generic.
 5. Preserve existing project identity and source truth.
 6. Update navigation when adding durable docs or prompts.
@@ -92,6 +94,8 @@ Closeout:
 - Stop conditions or next gate:
 - Recommended next phase:
 - Uncertainty or gated follow-up:
+- Learning loop: none / applied guard / parked follow-up
+- Durable capture: chat-only / written at [path] / queued at [path] / blocked by stop gate
 - Committed: yes/no, with commit hash if yes
 - Pushed: yes/no, with remote branch if yes
 ```

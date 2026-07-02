@@ -22,6 +22,7 @@ Before editing, read:
 - Ask clarifying questions when the answer would materially change authority, safety, scope, or outcome.
 - If a request is broad, choose a bounded first pass, do it, and report what remains.
 - Small tasks do not need ceremony.
+- `observe only`, `report only`, `scan`, and `don't change a thing` mean inspect and report without file edits, staging, commits, pushes, merges, or durable capture.
 - Do not casually edit safe-boundary areas listed below.
 - Update the handoff or queue when useful context would otherwise be lost.
 - For non-trivial work, run a closeout learning loop: note any repeatable failure mode, confusion, or risk; add the smallest reasonable prevention when safe; record a visible follow-up when prevention is too large; or say no useful guard was found.
@@ -41,4 +42,4 @@ Example:
 
 ## Git workflow
 
-Use a branch for changes. Commit and push only when the user asks or when this repo's workflow requires it. Report cleanup status and avoid leaving unnecessary branch or handoff debt.
+Use a branch for changes. Commit and push only when the user asks or when this repo's workflow requires it. Do not merge to the default branch unless explicitly authorized. Report cleanup status and avoid leaving unnecessary branch or handoff debt.

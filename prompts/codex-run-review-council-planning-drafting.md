@@ -23,6 +23,7 @@ Target branch:
 Authority:
 [Observe only / edit allowed / commit allowed / push allowed.]
 Do not merge to main unless explicitly authorized.
+If authority is observe-only or report-only, inspect and report only. Do not edit files, stage, commit, push, merge, or perform durable capture.
 
 Allowed writes:
 [List paths or areas that may be changed.]
@@ -91,6 +92,8 @@ Closeout:
 - Stop conditions or next gate:
 - Recommended next phase:
 - Uncertainty or gated follow-up:
+- Learning loop: none / applied guard / parked follow-up
+- Durable capture: chat-only / written at [path] / queued at [path] / blocked by stop gate
 - Committed: yes/no, with commit hash if yes
 - Pushed: yes/no, with remote branch if yes
 ```
