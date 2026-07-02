@@ -77,6 +77,10 @@ Handoffs keep unfinished work from becoming hidden context. Prompts make common 
 
 The kit should prefer short, reusable surfaces over large process documents.
 
+### Future Checklist Ideas
+
+One deferred idea is a small public checklist for making repo workspaces easier for humans and coding agents to read, restart, and validate. If developed later, it should stay generic: local rules, source maps, handoffs, validation entry points, and source-truth boundaries. It is deferred until supported by public examples.
+
 ### Future Skills
 
 Future skills may become a reusable workflow surface for Codex-assisted repo work. For now, skills should be described only as draft or future-facing patterns unless a specific finished skill exists in a repo that documents its own installation and use.
