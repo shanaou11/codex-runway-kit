@@ -32,7 +32,7 @@ Runway work should not stall on ordinary tasks.
 
 Small tasks do not need ceremony. Escalate on consequence, not on discomfort.
 
-For the fuller public rule set, see [Momentum and Escalation](09-momentum-and-escalation.md).
+For the fuller public rule set, including the task-setting handoff and approval-gated capability-improvement pattern, see [Momentum and Escalation](09-momentum-and-escalation.md). A recommendation should affect only future work: higher settings may pause before substantial or consequential action, while downgrades do not interrupt. Missing tools should trigger an exact permission request only when the friction is material, recurring, blocking, confidence-reducing, or useful for reusable validation.
 
 ## Local law
 

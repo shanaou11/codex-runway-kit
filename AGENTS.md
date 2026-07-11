@@ -50,6 +50,8 @@ Do not mention non-public repositories, organizations, projects, examples, or re
 - If a request is broad, choose a bounded first pass, do it, and report what remains.
 - If a bounded report or plan has already been approved, proceed without asking for the same approval again unless the state changed or a stop condition appeared.
 - Small tasks do not need ceremony.
+- Follow `docs/09-momentum-and-escalation.md` for task-setting and capability-improvement advice. Use current visible setting labels, do not claim an unexposed active setting, return the turn only when a higher recommendation can still improve substantial or consequential next work, and never interrupt for a downgrade.
+- Propose a capability change only for material or recurring friction, reduced confidence, a blocker, substantial repeated effort, or reusable validation. State the exact remedy, scope, changed state, risk, rollback, fallback, and permission requested; do not install, configure, authenticate, upgrade, expand permissions, or add dependencies without the authority required by local law.
 
 ## Cross-Repo Orchestration / Runway Rules
 

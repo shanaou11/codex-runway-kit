@@ -13,7 +13,7 @@ Start here for the public Codex Runway Kit docs.
 - [Safe Boundaries](04-safe-boundaries.md): Explains how to mark areas that should not be casually edited.
 - [Promotion Rules](05-promotion-rules.md): Shows how raw observations become durable repo memory.
 - [Note Role and Size Guardrail](06-note-role-and-size-guardrail.md): Sets soft review triggers so notes keep one clear job without turning line count into hard law.
-- [Momentum and Escalation](09-momentum-and-escalation.md): Explains when Codex should execute directly, when to clarify, and how to keep broad requests moving through the smallest safe next step.
+- [Momentum and Escalation](09-momentum-and-escalation.md): Explains direct execution, clarification, task-setting handoffs, approval-gated capability improvement, and the smallest safe next step for broad requests.
 
 ## Templates and prompts
 

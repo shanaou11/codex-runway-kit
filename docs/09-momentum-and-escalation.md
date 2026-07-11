@@ -71,6 +71,40 @@ Use extra structure only when it helps.
 - Larger, riskier, or cross-surface work may benefit from role separation, explicit review, or a visible preflight.
 - Do not inflate routine work into process theater.
 
+## Task-setting gate
+
+When the current Codex surface exposes a model, reasoning, or task-setting choice, make recommendations early enough to affect the work they are meant to improve.
+
+- Use the labels visible on the current surface rather than freezing product-specific names into repo doctrine.
+- Do not claim the active setting unless the user or environment exposes it.
+- Continue when the known current setting matches or exceeds the recommendation.
+- Never interrupt current work to recommend a lower setting; save that suggestion for the next bounded task.
+- When a higher setting can still materially improve substantial investigation, implementation, protected work, cross-repo synthesis, or consequential judgment, return the turn before beginning that work.
+- If the current setting is unknown, continue bounded reversible work and pause only when the next action is consequential enough that the setting materially affects confidence.
+
+A setting recommendation is advisory. It never expands file, Git, deployment, production, data, authentication, or external-system authority.
+
+## Capability-improvement gate
+
+Do not silently normalize a materially inferior workaround when a missing capability creates recurring friction, reduces confidence, blocks the task, wastes substantial repeated effort, or could provide reusable validation. For trivial one-off inconvenience, use an adequate existing fallback without creating installation ceremony.
+
+When a proposal is justified, state:
+
+- the exact remedy
+- the expected benefit
+- whether its scope is repo-local, user-level, system-level, or external
+- the files, dependencies, configuration, environment, services, permissions, or external access it would change
+- meaningful supply-chain, persistence, credential, cost, data, or compatibility risks
+- a safe rollback
+- the current fallback
+- the exact permission being requested
+
+Keep installation, configuration, authentication, routine reuse, upgrade, and permission expansion as separate grants. Restoring dependencies already declared by a repository may be normal environment setup when local law and task authority allow it. Adding dependencies, global tools, background services, authentication, paid services, elevated permissions, production/runtime dependencies, or server changes requires explicit approval.
+
+After approval, validate only the granted capability and continue the original task inside local law. Routine reuse remains task-shaped; upgrades and permission expansion require new approval. If installation or validation fails, stop expanding, report the partial state, preserve the original task, and use the prior fallback. Roll back only when it is safe and already authorized.
+
+A tool, plugin, skill, connector, service, or runtime never widens repo-local authority.
+
 ## Relationship to stop conditions
 
 Momentum never overrides stop conditions.
