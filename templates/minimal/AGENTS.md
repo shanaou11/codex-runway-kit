@@ -4,13 +4,13 @@ This file tells Codex and other agents how to work in this repo.
 
 ## Read first
 
-Before editing, read:
+Before editing, read the compact universal entry set:
 
 1. `README.md`
 2. `docs/_index.md`
-3. `Atlas/00-Start Here.md`
-4. `session/Next session handoff.md`
-5. Any file directly affected by the task
+3. Any file directly affected by the task
+
+Load `Atlas/00-Start Here.md` for navigation or restart routing. Load `session/Next session handoff.md` only for continuation, landing, cleanup, or unresolved prior state.
 
 ## Operating rules
 
@@ -23,6 +23,7 @@ Before editing, read:
 - Ask clarifying questions when the answer would materially change authority, safety, scope, or outcome.
 - If a request is broad, choose a bounded first pass, do it, and report what remains.
 - Small tasks do not need ceremony.
+- Keep universal starter context small. New useful docs remain conditional by default; do not add a mandatory starter file merely because it is important.
 - When the current surface exposes a useful task-setting choice, do not claim an unexposed active setting. Continue when the known setting is sufficient, never interrupt for a downgrade, and return the turn before substantial or consequential work only when a higher recommendation can still improve it.
 - When a missing capability creates material or recurring friction, reduces confidence, blocks work, wastes substantial repeated effort, or could create reusable validation, propose the smallest exact remedy with scope, changed state, risk, rollback, fallback, and permission requested. Use an adequate existing fallback quietly for trivial one-off inconvenience.
 - Treat installation, configuration, authentication, routine reuse, upgrade, and permission expansion as separate grants. A capability never widens repo-local authority.

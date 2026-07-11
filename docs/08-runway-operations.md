@@ -49,6 +49,18 @@ Use `AGENTS.md` for stable rules such as:
 
 Local law should stay practical. One-time task notes belong in a mission brief, queue, or handoff rather than becoming permanent repo rules.
 
+### Conditional starter context
+
+Treat startup context as a constrained interface, not a catalog of every useful file in the repository.
+
+1. Read `AGENTS.md` and the smallest compact front door or index required by local law.
+2. Classify the task, authority, source owner, risk, and likely output.
+3. Load only the affected files and canonical owner docs needed for that task.
+4. Load a handoff for continuation, landing, cleanup, or unresolved prior state—not for every unrelated task.
+5. Load evidence only for the selected evidence question and history only when historical context is relevant.
+
+New docs should remain conditional by default. Adding an owner doc, evidence note, prompt, or handoff does not make it universal startup material. If a repository later needs machine-enforced starter budgets, it may add a small repo-local manifest or checker, but the minimal Runway Kit does not require one.
+
 ### Live authority after fetch
 
 An agent can have several instruction states at once: text already loaded into the session, files checked out in the worktree, and newer files visible on a fetched remote-tracking branch. Treat those as different until compared.

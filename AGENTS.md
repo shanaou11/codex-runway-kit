@@ -4,15 +4,19 @@ This file is the operating guide for Codex or any other agent working in this re
 
 ## Read first
 
-Before making changes, read:
+Before making changes, read the compact universal entry set:
 
 1. `README.md`
 2. `docs/_index.md`
-3. `docs/07-codex-runway-kit.md`
-4. `docs/08-runway-operations.md`
-5. `docs/00-atlas-contract.md`
-6. `Atlas/00-Start Here.md`
-7. Any file directly affected by the requested change
+3. Any file directly affected by the requested change
+
+Then load only the owner surface needed for the task:
+
+- broader public framing or positioning: `docs/07-codex-runway-kit.md`
+- mission briefs, local law, context loading, validation, or landing reports: `docs/08-runway-operations.md`
+- Atlas Memory contract or scaffold behavior: `docs/00-atlas-contract.md`
+- navigation or restart routing: `Atlas/00-Start Here.md`
+- continuation, landing, cleanup, or unresolved prior state: `session/Next session handoff.md`
 
 For template changes, also inspect the matching files under `templates/minimal/`.
 
@@ -50,6 +54,7 @@ Do not mention non-public repositories, organizations, projects, examples, or re
 - If a request is broad, choose a bounded first pass, do it, and report what remains.
 - If a bounded report or plan has already been approved, proceed without asking for the same approval again unless the state changed or a stop condition appeared.
 - Small tasks do not need ceremony.
+- Keep universal starter context small. New useful docs remain conditional by default; do not add a mandatory starter file merely because it is important.
 - Follow `docs/09-momentum-and-escalation.md` for task-setting and capability-improvement advice. Use current visible setting labels, do not claim an unexposed active setting, return the turn only when a higher recommendation can still improve substantial or consequential next work, and never interrupt for a downgrade.
 - Propose a capability change only for material or recurring friction, reduced confidence, a blocker, substantial repeated effort, or reusable validation. State the exact remedy, scope, changed state, risk, rollback, fallback, and permission requested; do not install, configure, authenticate, upgrade, expand permissions, or add dependencies without the authority required by local law.
 
