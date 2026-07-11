@@ -18,6 +18,7 @@ Before editing, read:
 - Keep changes focused on the requested task.
 - Mark uncertainty instead of guessing.
 - Prefer the smallest safe next step that creates useful progress.
+- Keep session-loaded instructions, checked-out files, and fetched remote-tracking authority distinct. If current main differs on `AGENTS.md` or another relevant operating surface, reread current-main authority before setting/runtime advice or subsequent implementation. A fetch updates refs; it does not refresh the worktree.
 - Do not ask clarifying questions for every small bounded task when the intended outcome is already clear.
 - Ask clarifying questions when the answer would materially change authority, safety, scope, or outcome.
 - If a request is broad, choose a bounded first pass, do it, and report what remains.

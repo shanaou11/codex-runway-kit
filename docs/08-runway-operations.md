@@ -49,6 +49,26 @@ Use `AGENTS.md` for stable rules such as:
 
 Local law should stay practical. One-time task notes belong in a mission brief, queue, or handoff rather than becoming permanent repo rules.
 
+### Live authority after fetch
+
+An agent can have several instruction states at once: text already loaded into the session, files checked out in the worktree, and newer files visible on a fetched remote-tracking branch. Treat those as different until compared.
+
+- `git fetch` updates remote-tracking refs; it does not update the checked-out worktree.
+- If current main is newer, compare only the operating surfaces relevant to the next action, such as `AGENTS.md`, a local workflow guide, or another explicitly declared instruction path.
+- When one of those surfaces differs, read its current-main version before giving model, reasoning, task-setting, runtime, collaboration, or other operating advice, and before beginning subsequent implementation.
+- A clearly historical report may retain older product labels. Do not route that history as current operating guidance.
+- If the compared authority surfaces are identical, record that narrow comparison instead of reloading every linked document.
+
+A dependency-free Git validation pattern is:
+
+```powershell
+git fetch origin
+git diff --name-status HEAD..origin/main -- AGENTS.md README.md docs/your-operating-guide.md
+git show origin/main:AGENTS.md
+```
+
+Use the diff to decide what must be reread. The final `git show` example reads current-main authority without claiming that the worktree was refreshed. Repositories with several stable instruction paths can wrap this comparison in a local script or manifest-backed checker that exits nonzero and names every changed authority surface.
+
 ## Atlas Memory
 
 Atlas Memory is the first concrete module inside the broader Runway Kit. It keeps continuity close to the repo through plain Markdown:

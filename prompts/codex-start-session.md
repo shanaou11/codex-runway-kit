@@ -13,6 +13,8 @@ Start by reading:
 5. session/Next session handoff.md
 6. Any files directly relevant to my request
 
+If you fetch or compare current main during startup, do not describe the fetch as refreshing the worktree. Compare relevant operating surfaces with current main and reread any changed authority there before giving setting/runtime advice or beginning implementation.
+
 Then report:
 - current branch and worktree status
 - the most relevant context you found

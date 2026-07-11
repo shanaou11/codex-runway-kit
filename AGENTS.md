@@ -44,6 +44,7 @@ Do not mention non-public repositories, organizations, projects, examples, or re
 ## Execution stance
 
 - Prefer the smallest safe next step that creates useful progress.
+- Keep session-loaded instructions, checked-out files, and fetched remote-tracking authority distinct. If a fetch or live-main comparison shows that `AGENTS.md` or another relevant operating surface differs on the current default branch, reread that current-branch version before setting/runtime advice or subsequent implementation. A fetch does not refresh the worktree.
 - Do not ask clarifying questions for every small bounded task when local law and the requested outcome are already clear.
 - Ask clarifying questions when the answer would materially change authority, safety, scope, or outcome.
 - If a request is broad, choose a bounded first pass, do it, and report what remains.
