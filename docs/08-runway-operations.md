@@ -132,6 +132,28 @@ Label execution honestly. Actual delegated work means separate sessions, agents,
 
 Delegated lanes should also be cleaned up intentionally. When a delegated session or agent has reported and no explicit follow-up is queued, close or release that lane after capturing its output. Leave a lane idle only with a named reason such as an expected follow-up, integration pause, file arrival, or active branch/artifact. Final synthesis should state agent or lane cleanup status.
 
+### Steerable missions and semantic report routing
+
+Use nested delegation for bounded work that can return through its requester without direct human intervention. Use a visible task when the human steering the mission may need to inspect progress, answer a question, correct a misunderstanding, pause, or redirect the work. Declare steering as `none expected`, `exception-only`, or `active`. Steering access is a communication route, not permission to widen scope or authority.
+
+Visible, multi-hop, or cross-session work should keep one stable Mission ID from dispatch through closeout. A task, thread, session, agent, or other execution address may change without creating a new mission when the objective, authority, and mission owner stay the same. When the semantic route changes, record the old and new address, replacement time and reason, accepting recipient, undelivered payloads, open questions, and receipt state.
+
+Keep these duties distinct even when one person or task holds several of them:
+
+- Mission owner: accountable for direction and closure.
+- Requesting task: created the dependency and normally needs the result.
+- Dispatcher: assigns or creates the worker.
+- Worker: performs the bounded work.
+- Supervisory status recipient: receives compact progress, blocker, verdict, or completion status at a named current address.
+- Return recipient: receives the full work product.
+- Consolidation owner: combines reports into the decision or closeout packet.
+- Landing owner: integrates approved output when landing is authorized.
+- Cleanup owner: records the disposition of delegated lanes and other named cleanup objects.
+
+Route reports by semantic dependency rather than by who launched the worker. Send the full work product to the return recipient, compact status to the named supervisory status recipient, and a landing receipt to the landing owner when applicable. If direct delivery is unavailable, relay the original payload without dropping evidence pointers, uncertainty, attachments, or the intended recipient; add a separate header with Mission ID, origin, payload class, destination, and current route state.
+
+Classify the report as `answer-only`, `evidence packet`, `implementation handoff`, `decision packet`, or `closeout report`. Keep report state (`complete`, `partial`, or `blocked`) separate from delivery state (`pending`, `delivered`, `acknowledged`, or `blocked`). Silence is not acknowledgement. An acknowledgement states the Mission ID, payload and class received, route accepted or corrected, missing items or delivery gaps, and next owner if any; it proves delivery only and does not validate, approve, consolidate, land, or clean up the work.
+
 The reusable public prompt is [Codex Prompt: Run Review Council Planning + Drafting](../prompts/codex-run-review-council-planning-drafting.md).
 
 ## Ground sites and source truth
@@ -163,6 +185,7 @@ Durable capture should stay small and repo-local. Use an existing owner surface 
 
 A landing report should make the end state easy to review:
 
+- Mission ID, semantic return recipient, supervisory status recipient, report state, delivery and receipt state, route replacements, and visible-task disposition when semantic routing was used.
 - Run location.
 - Target repo.
 - Branch.

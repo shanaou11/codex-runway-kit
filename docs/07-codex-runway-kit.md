@@ -47,6 +47,7 @@ ATC/Council is an optional coordination pattern for larger Codex-assisted runs.
 - ATC keeps the mission, scope, authority, stop conditions, and landing report visible.
 - Council separates responsibilities so a run can include editing, checking, validation, and recommendation without blurring those jobs together.
 - For larger plans, specs, roadmaps, doctrine notes, or module direction, Council can also separate planning and drafting lanes so the artifact skeleton begins while other lanes inspect current state, source truth, structure, sequencing, and risks.
+- For visible, multi-hop, or cross-session missions, keep one Mission ID while execution addresses change, declare how much direct steering is expected, and route the full work product to its semantic consumer rather than assuming the launcher is the recipient.
 - The workflow can be used by one person, one Codex session, or several manually coordinated sessions.
 
 This is a documentation and prompting pattern. It does not automate orchestration by itself.

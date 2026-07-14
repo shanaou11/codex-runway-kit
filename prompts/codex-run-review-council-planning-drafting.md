@@ -14,6 +14,15 @@ Do not treat this as a CLI, package, automation platform, plugin, hosted service
 Mission:
 [One or two sentences describing the desired plan, spec, roadmap, doctrine note, or module direction.]
 
+Mission ID:
+[Stable identifier for visible, multi-hop, or cross-session work.]
+
+Steering mode:
+[None expected / exception-only / active. If direct steering is possible, use non-sensitive role labels and addresses; do not commit private task URLs or personal identifiers.]
+
+Execution surface:
+[Direct / nested delegation / visible task or session. Prefer nested delegation for `none expected`; prefer a visible surface for `exception-only` or `active` when direct human steering may be needed. If the preferred surface is unavailable, name the manual or relay fallback.]
+
 Target repo:
 [Current repo path or repo name.]
 
@@ -40,6 +49,19 @@ Stop conditions:
 - Secrets or private material appear.
 - The work requires strategic judgment beyond the stated authority.
 
+Semantic route:
+- Mission owner:
+- Requesting task and current address:
+- Dispatcher:
+- Worker or lane addresses:
+- Supervisory status recipient and current address:
+- Return recipient and current return address:
+- Required payload class: answer-only / evidence packet / implementation handoff / decision packet / closeout report
+- Receipt required: yes/no, with receipt destination
+- Consolidation owner:
+- Landing owner, if landing is authorized:
+- Cleanup owner and named cleanup objects:
+
 Council truth labels:
 - Council mode: Light Council / Full Council / Parallel Planning + Drafting / single-session role-split.
 - Execution shape: actual delegated sessions / manually coordinated sessions / single-session role-split.
@@ -64,8 +86,18 @@ Coordinator duties:
 4. Integrate lane findings rather than restarting the artifact from zero.
 5. Preserve source truth in the target repo.
 6. Label uncertainty instead of inventing facts.
+7. Route each full lane report to its semantic return recipient and send only the required compact status to the named supervisory status recipient.
+8. If direct delivery is unavailable, relay the original payload losslessly with a separate header containing Mission ID, origin, payload class, destination, and current route state.
+9. Record every route replacement as: Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state.
 
 Lane report format:
+- Mission ID:
+- Payload class:
+- Intended return recipient:
+- Supervisory status recipient:
+- Report state: complete / partial / blocked
+- Delivery state: pending / delivered / acknowledged / blocked
+- Receipt state or unresolved delivery gap:
 - Strong findings:
 - Pushback or caution:
 - Recommendation:
@@ -88,6 +120,11 @@ Closeout:
 - Summary of what changed:
 - Checker verdict:
 - Validator verdict:
+- Semantic routing summary, if used: Mission ID / return recipient / supervisory status recipient / visible-task disposition
+- Report state: complete / partial / blocked
+- Delivery state: pending / delivered / acknowledged / blocked
+- Receipt or unresolved delivery gap:
+- Route replacements: none / Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state
 - Agent/lane cleanup: all delegated lanes closed or released / intentionally left open with reason / no delegated lanes used
 - Stop conditions or next gate:
 - Recommended next phase:

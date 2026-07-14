@@ -14,6 +14,15 @@ Do not treat this as a CLI, package, automation platform, plugin, hosted service
 Mission:
 [One or two sentences describing the work.]
 
+Mission ID:
+[Stable identifier for visible, multi-hop, or cross-session work.]
+
+Steering mode:
+[None expected / exception-only / active. If direct steering is possible, use non-sensitive role labels and addresses; do not commit private task URLs or personal identifiers.]
+
+Execution surface:
+[Direct / nested delegation / visible task or session. Prefer nested delegation for `none expected`; prefer a visible surface for `exception-only` or `active` when direct human steering may be needed. If the preferred surface is unavailable, name the manual or relay fallback.]
+
 Target repo:
 [Current repo path or repo name.]
 
@@ -38,6 +47,19 @@ Stop conditions:
 - Required validation cannot be completed or clearly reported.
 - Secrets or private material appear.
 - The work requires strategic judgment beyond the stated authority.
+
+Semantic route:
+- Mission owner:
+- Requesting task and current address:
+- Dispatcher:
+- Worker and current address:
+- Supervisory status recipient and current address:
+- Return recipient and current return address:
+- Required payload class: answer-only / evidence packet / implementation handoff / decision packet / closeout report
+- Receipt required: yes/no, with receipt destination
+- Consolidation owner:
+- Landing owner, if landing is authorized:
+- Cleanup owner and named cleanup objects:
 
 Visible Council preflight before edits:
 - Mission Chair: restate the mission in plain language.
@@ -67,9 +89,14 @@ Ground Crew Dispatch before edits:
   - assigned task
   - allowed surfaces
   - forbidden surfaces
-  - expected report-back
+  - expected full-work-product recipient
+  - expected supervisory status recipient
+  - required payload class and receipt expectation
 - Keep forbidden surfaces explicit. Include out-of-scope repos, protected files, secrets, private material, production config, generated files, or any area the mission does not authorize.
-- Report back visibly when each role finishes, even if the report is brief.
+- Record completion through the named full-payload and/or compact-status route when each role finishes, even if the report is brief.
+- Route by semantic dependency: full work product to the return recipient, compact status to the named supervisory status recipient, and landing receipt to the landing owner when applicable.
+- If direct delivery is unavailable, relay the original payload losslessly with its Mission ID, origin, payload class, intended recipient, evidence pointers, uncertainty, and current route state.
+- If a task address changes, record the route replacement as: Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state.
 
 Execution:
 1. Inspect before editing.
@@ -90,6 +117,11 @@ Closeout:
 - Summary of what changed:
 - Checker verdict:
 - Validator verdict:
+- Semantic routing summary, if used: Mission ID / return recipient / supervisory status recipient / visible-task disposition
+- Report state: complete / partial / blocked
+- Delivery state: pending / delivered / acknowledged / blocked
+- Receipt or unresolved delivery gap:
+- Route replacements: none / Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state
 - Agent/lane cleanup: all delegated lanes closed or released / intentionally left open with reason / no delegated lanes used
 - Stop conditions or next gate:
 - Recommended next phase:
