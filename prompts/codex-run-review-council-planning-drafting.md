@@ -59,8 +59,14 @@ Semantic route:
 - Required payload class: answer-only / evidence packet / implementation handoff / decision packet / closeout report
 - Receipt required: yes/no, with receipt destination
 - Consolidation owner:
+- Landing authority: not granted / exact allowed landing action and target
 - Landing owner, if landing is authorized:
-- Cleanup owner and named cleanup objects:
+- Cleanup authority: not granted / exact allowed branch, remote-ref, worktree, or destructive actions
+- Cleanup owner:
+- Named cleanup objects:
+
+Delegation wait rule:
+- After a receiver explicitly accepts delegated execution, the sender pauses that delegated path until the receiver reports. Steering and clarification may continue, but duplicate execution may not. Resume only after the report or an explicit return-for-revision handoff.
 
 Council truth labels:
 - Council mode: Light Council / Full Council / Parallel Planning + Drafting / single-session role-split.
@@ -121,6 +127,7 @@ Closeout:
 - Checker verdict:
 - Validator verdict:
 - Semantic routing summary, if used: Mission ID / return recipient / supervisory status recipient / visible-task disposition
+- Landing and cleanup authority used, with exact named cleanup objects and disposition:
 - Report state: complete / partial / blocked
 - Delivery state: pending / delivered / acknowledged / blocked
 - Receipt or unresolved delivery gap:
