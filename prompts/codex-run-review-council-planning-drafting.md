@@ -73,7 +73,7 @@ Council truth labels:
 - Execution shape: actual delegated sessions / manually coordinated sessions / single-session role-split.
 - Do not claim actual delegation unless separate sessions, agents, or people produced separate reports.
 - Shell parallelism, branch lanes, and role labels are not actual delegation.
-- Delegated agents are mission-local role holders. Reuse only the same mission, role, authority, and source boundary after a refresh and contamination check. After report capture, separate work completion from runtime disposal; close or release only when supported and permitted, otherwise report `work complete; disposal unavailable`.
+- Delegated agents are mission-local role holders. Reuse only the same mission, role, authority, and source boundary after a refresh and contamination check. Do not reuse a runtime agent as an independent final or whole-candidate reviewer. A prior reviewer may be reused only for a named finding-specific replay; that replay is not fresh review, a broad round, or whole-candidate clearance. After report capture, separate work completion from runtime disposal; close or release only when supported and permitted, otherwise report `work complete; disposal unavailable`.
 
 Parallel lanes:
 - Vision lane: define the goal, user questions, success shape, and non-goals.
