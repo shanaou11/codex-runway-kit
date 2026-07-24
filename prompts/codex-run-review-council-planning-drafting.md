@@ -73,7 +73,7 @@ Council truth labels:
 - Execution shape: actual delegated sessions / manually coordinated sessions / single-session role-split.
 - Do not claim actual delegation unless separate sessions, agents, or people produced separate reports.
 - Shell parallelism, branch lanes, and role labels are not actual delegation.
-- Delegated lane cleanup: close or release a delegated session after its report is captured unless a named follow-up remains.
+- Delegated agents are mission-local role holders. Reuse only the same mission, role, authority, and source boundary after a refresh and contamination check. Do not reuse a runtime agent as an independent final or whole-candidate reviewer. A prior reviewer may be reused only for a named finding-specific replay; that replay is not fresh review, a broad round, or whole-candidate clearance. After report capture, separate work completion from runtime disposal; close or release only when supported and permitted, otherwise report `work complete; disposal unavailable`.
 
 Parallel lanes:
 - Vision lane: define the goal, user questions, success shape, and non-goals.
@@ -132,7 +132,8 @@ Closeout:
 - Delivery state: pending / delivered / acknowledged / blocked
 - Receipt or unresolved delivery gap:
 - Route replacements: none / Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state
-- Agent/lane cleanup: all delegated lanes closed or released / intentionally left open with reason / no delegated lanes used
+- Agent/lane disposition: work complete and disposed / work complete and disposal unavailable / retained for named same-mission follow-up / blocked or unreported / no delegated lanes used
+- Agent reuse: fresh / same-mission continuation / finding-specific replay; refresh and contamination result
 - Stop conditions or next gate:
 - Recommended next phase:
 - Uncertainty or gated follow-up:
