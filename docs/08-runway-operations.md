@@ -130,7 +130,11 @@ Common planning lanes:
 
 Label execution honestly. Actual delegated work means separate sessions, agents, or people produced separate reports. Manually coordinated sessions should say so. A single Codex session can still use role-split thinking, but it should not claim actual delegation. Shell parallelism, branch lanes, and role labels are not actual delegation.
 
-Delegated lanes should also be cleaned up intentionally. When a delegated session or agent has reported and no explicit follow-up is queued, close or release that lane after capturing its output. Leave a lane idle only with a named reason such as an expected follow-up, integration pause, file arrival, or active branch/artifact. Final synthesis should state agent or lane cleanup status.
+Treat a delegated agent as a mission-local role holder rather than a permanent generalist. Reuse the same runtime agent only for a bounded follow-up under the same mission, role, authority, and source boundary after a refresh and contamination check. Independent final review requires a fresh role holder; an earlier reviewer may be reused only for a narrowly named finding-specific replay.
+
+After required delivery, record work completion separately from runtime disposal. Close or release the agent only when the current surface supports it and the mission permits it. If disposal is unavailable, report `work complete; disposal unavailable` instead of claiming closure. Leave a role active only for a named follow-up, integration pause, file arrival, or owned branch/artifact. Final synthesis should state role work, follow-up, runtime disposition, and any reuse.
+
+Keep parent model controls, child request options, requested settings, request acceptance, visible child settings, and backend resolution separate. Report only the evidence the current surface exposes; a title, self-report, or accepted request is not backend telemetry.
 
 ### Steerable missions and semantic report routing
 
