@@ -77,8 +77,12 @@ When the current Codex surface exposes a model, reasoning, or task-setting choic
 
 - Use the labels visible on the current surface rather than freezing product-specific names into repo doctrine.
 - Do not claim the active setting unless the user or environment exposes it.
+- Classify each actor from the next substantial action that actor will personally perform. A coordinator, worker, and reviewer do not automatically inherit one profile from the mission or from one another.
+- Treat the classification as phase-local. Reassess when an actor moves into materially different coordination, implementation, remediation, review, or landing work.
+- A newly delegated role is a new bounded task. It may use a lower adequate setting without interrupting or changing the coordinator's active setting, and difficult delegated work does not by itself require escalating the coordinator.
+- Choose a reviewer's setting from the assurance need and review complexity. Reviewer freshness and independence are separate requirements; a stronger setting does not make a reused reviewer independent.
 - Continue when the known current setting matches or exceeds the recommendation.
-- Never interrupt current work to recommend a lower setting; save that suggestion for the next bounded task.
+- Never interrupt an actor's current work to recommend a lower setting; save that suggestion for that actor's next bounded task or phase.
 - When a higher setting can still materially improve substantial investigation, implementation, protected work, cross-repo synthesis, or consequential judgment, return the turn before beginning that work.
 - If the current setting is unknown, continue bounded reversible work and pause only when the next action is consequential enough that the setting materially affects confidence.
 

@@ -53,19 +53,24 @@ Semantic route:
 - Requesting task and current address:
 - Dispatcher:
 - Worker and current address:
+- Current execution phase:
+- Requested profile for each active role: visible label / unknown
 - Supervisory status recipient and current address:
 - Return recipient and current return address:
 - Required payload class: answer-only / evidence packet / implementation handoff / decision packet / closeout report
 - Receipt required: yes/no, with receipt destination
 - Consolidation owner:
 - Landing authority: not granted / exact allowed landing action and target
-- Landing owner, if landing is authorized:
+- Landing owner and current address, if landing is authorized:
+- Direct landing attachment and receipt destination: supported / unavailable / not applicable
 - Cleanup authority: not granted / exact allowed branch, remote-ref, worktree, or destructive actions
 - Cleanup owner:
 - Named cleanup objects:
 
 Delegation wait rule:
 - After a receiver explicitly accepts delegated execution, the sender pauses that delegated path until the receiver reports. Steering and clarification may continue, but duplicate execution may not. Resume only after the report or an explicit return-for-revision handoff.
+- If a replacement task or session continues the same delegated path, carry the Mission ID, role, authority, source boundary, branch or work lane, current phase, requested profile when known, changed and validation state, pending payloads, open questions, and predecessor status. Transfer active execution responsibility only after successor acceptance, and keep one active holder.
+- If the predecessor failed, became unavailable, or cannot be verified, record the recovery reason and last confirmed state. A predecessor that later resumes is stale until explicitly reconciled.
 
 Visible Council preflight before edits:
 - Mission Chair: restate the mission in plain language.
@@ -93,8 +98,11 @@ Ground Crew Dispatch before edits:
 - Give each role a short work order:
   - role name
   - assigned task
+  - current execution phase
+  - requested profile, using only a visible label or `unknown`
   - allowed surfaces
   - forbidden surfaces
+  - assurance and freshness requirement, when the role reviews
   - expected full-work-product recipient
   - expected supervisory status recipient
   - required payload class and receipt expectation
@@ -129,6 +137,9 @@ Closeout:
 - Delivery state: pending / delivered / acknowledged / blocked
 - Receipt or unresolved delivery gap:
 - Route replacements: none / Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state
+- Actor/phase profile summary: role / phase / requested profile / visible or unknown state
+- Successor or recovery state: none / predecessor status and reason / successor acceptance / active execution holder
+- Direct landing attachment: not applicable / unavailable / delivered / acknowledged, with non-sensitive receipt evidence
 - Agent/lane disposition: work complete and disposed / work complete and disposal unavailable / retained for named same-mission follow-up / blocked or unreported / no delegated lanes used
 - Agent reuse: fresh / same-mission continuation / finding-specific replay; refresh and contamination result
 - Stop conditions or next gate:

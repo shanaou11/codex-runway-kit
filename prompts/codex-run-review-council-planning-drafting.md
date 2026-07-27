@@ -54,19 +54,24 @@ Semantic route:
 - Requesting task and current address:
 - Dispatcher:
 - Worker or lane addresses:
+- Current execution phase for each active role or lane:
+- Requested profile for each active role or lane: visible label / unknown
 - Supervisory status recipient and current address:
 - Return recipient and current return address:
 - Required payload class: answer-only / evidence packet / implementation handoff / decision packet / closeout report
 - Receipt required: yes/no, with receipt destination
 - Consolidation owner:
 - Landing authority: not granted / exact allowed landing action and target
-- Landing owner, if landing is authorized:
+- Landing owner and current address, if landing is authorized:
+- Direct landing attachment and receipt destination: supported / unavailable / not applicable
 - Cleanup authority: not granted / exact allowed branch, remote-ref, worktree, or destructive actions
 - Cleanup owner:
 - Named cleanup objects:
 
 Delegation wait rule:
 - After a receiver explicitly accepts delegated execution, the sender pauses that delegated path until the receiver reports. Steering and clarification may continue, but duplicate execution may not. Resume only after the report or an explicit return-for-revision handoff.
+- If a replacement task or session continues the same delegated path, carry the Mission ID, role, authority, source boundary, branch or work lane, current phase, requested profile when known, changed and validation state, pending payloads, open questions, and predecessor status. Transfer active execution responsibility only after successor acceptance, and keep one active holder.
+- If the predecessor failed, became unavailable, or cannot be verified, record the recovery reason and last confirmed state. A predecessor that later resumes is stale until explicitly reconciled.
 
 Council truth labels:
 - Council mode: Light Council / Full Council / Parallel Planning + Drafting / single-session role-split.
@@ -87,14 +92,16 @@ Parallel lanes:
 
 Coordinator duties:
 1. Inspect local law before assigning lanes.
-2. Give each lane a scope, allowed surfaces, forbidden surfaces, and report format.
-3. Keep the draft moving while lane reports arrive.
-4. Integrate lane findings rather than restarting the artifact from zero.
-5. Preserve source truth in the target repo.
-6. Label uncertainty instead of inventing facts.
-7. Route each full lane report to its semantic return recipient and send only the required compact status to the named supervisory status recipient.
-8. If direct delivery is unavailable, relay the original payload losslessly with a separate header containing Mission ID, origin, payload class, destination, and current route state.
-9. Record every route replacement as: Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state.
+2. Classify each actor or lane from the next substantial action it will personally perform. Reassess at material phase changes; one lane's difficulty does not automatically set the Coordinator's or another lane's profile.
+3. Choose reviewer profiles from assurance need and review complexity while preserving fresh-review requirements separately.
+4. Give each lane a scope, phase, requested profile when known, allowed surfaces, forbidden surfaces, and report format.
+5. Keep the draft moving while lane reports arrive.
+6. Integrate lane findings rather than restarting the artifact from zero.
+7. Preserve source truth in the target repo.
+8. Label uncertainty instead of inventing facts.
+9. Route each full lane report to its semantic return recipient and send only the required compact status to the named supervisory status recipient.
+10. If direct delivery is unavailable, relay the original payload losslessly with a separate header containing Mission ID, origin, payload class, destination, and current route state.
+11. Record every route replacement as: Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state.
 
 Lane report format:
 - Mission ID:
@@ -104,6 +111,8 @@ Lane report format:
 - Report state: complete / partial / blocked
 - Delivery state: pending / delivered / acknowledged / blocked
 - Receipt state or unresolved delivery gap:
+- Role or lane / current phase / requested profile / visible or unknown state:
+- Successor or recovery state, if any:
 - Strong findings:
 - Pushback or caution:
 - Recommendation:
@@ -132,6 +141,9 @@ Closeout:
 - Delivery state: pending / delivered / acknowledged / blocked
 - Receipt or unresolved delivery gap:
 - Route replacements: none / Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state
+- Actor/phase profile summary: role or lane / phase / requested profile / visible or unknown state
+- Successor or recovery state: none / predecessor status and reason / successor acceptance / active execution holder
+- Direct landing attachment: not applicable / unavailable / delivered / acknowledged, with non-sensitive receipt evidence
 - Agent/lane disposition: work complete and disposed / work complete and disposal unavailable / retained for named same-mission follow-up / blocked or unreported / no delegated lanes used
 - Agent reuse: fresh / same-mission continuation / finding-specific replay; refresh and contamination result
 - Stop conditions or next gate:

@@ -136,11 +136,17 @@ After required delivery, record work completion separately from runtime disposal
 
 Keep parent model controls, child request options, requested settings, request acceptance, visible child settings, and backend resolution separate. Report only the evidence the current surface exposes; a title, self-report, or accepted request is not backend telemetry.
 
+Classify each actual actor's execution profile from the next substantial action that actor will personally perform. Coordinator, worker, and reviewer profiles are independent and phase-local: reassess an actor when its own work changes materially, not merely because another role has harder work. Choose reviewer profiles from assurance need and review complexity, while keeping reviewer freshness and independence as separate requirements.
+
 ### Steerable missions and semantic report routing
 
 Use nested delegation for bounded work that can return through its requester without direct human intervention. Use a visible task when the human steering the mission may need to inspect progress, answer a question, correct a misunderstanding, pause, or redirect the work. Declare steering as `none expected`, `exception-only`, or `active`. Steering access is a communication route, not permission to widen scope or authority.
 
 Visible, multi-hop, or cross-session work should keep one stable Mission ID from dispatch through closeout. A task, thread, session, agent, or other execution address may change without creating a new mission when the objective, authority, and mission owner stay the same. When the semantic route changes, record the old and new address, replacement time and reason, accepting recipient, undelivered payloads, open questions, and receipt state.
+
+When a replacement task or session continues the same delegated path, treat it as a successor renewal rather than a new mission. Carry forward the Mission ID, role, authority, source boundary, branch or work lane, current phase, requested profile when known, changed state, validation state, pending payloads, open questions, and the predecessor's last known status. Transfer active execution responsibility only after the successor accepts that capsule. Keep one active holder for the delegated path; a predecessor that later resumes is stale until the mission owner explicitly reconciles it.
+
+If the predecessor failed, became unavailable, or cannot be verified, record that recovery reason and the last confirmed state rather than inferring completion or delivery. Recovery preserves scope and authority; it does not silently restart completed work or broaden the mission.
 
 Keep these duties distinct even when one person or task holds several of them:
 
@@ -159,6 +165,8 @@ These duties name responsibility, not authority. Naming a landing owner does not
 After a receiver explicitly accepts delegated execution, the sender pauses that delegated path until the receiver reports. The sender may answer steering or clarification, but must not duplicate the accepted work. The sender resumes only after the report or an explicit return-for-revision handoff.
 
 Route reports by semantic dependency rather than by who launched the worker. Send the full work product to the return recipient, compact status to the named supervisory status recipient, and a landing receipt to the landing owner when applicable. If direct delivery is unavailable, relay the original payload without dropping evidence pointers, uncertainty, attachments, or the intended recipient; add a separate header with Mission ID, origin, payload class, destination, and current route state.
+
+Name the landing recipient and its current address when landing is authorized. When the current surface supports direct delivery or attachment, place the approved handoff or landing receipt there and record its receipt state; use a lossless relay only as the fallback. Routing or attachment does not grant landing authority. Keep sensitive task URLs and identifiers out of durable repo notes, using non-sensitive role labels instead.
 
 Classify the report as `answer-only`, `evidence packet`, `implementation handoff`, `decision packet`, or `closeout report`. Keep report state (`complete`, `partial`, or `blocked`) separate from delivery state (`pending`, `delivered`, `acknowledged`, or `blocked`). Silence is not acknowledgement. An acknowledgement states the Mission ID, payload and class received, route accepted or corrected, missing items or delivery gaps, and next owner if any; it proves delivery only and does not validate, approve, consolidate, land, or clean up the work.
 
