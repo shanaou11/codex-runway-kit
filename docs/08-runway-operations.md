@@ -136,7 +136,11 @@ After required delivery, record work completion separately from runtime disposal
 
 Keep parent model controls, child request options, requested settings, request acceptance, visible child settings, and backend resolution separate. Report only the evidence the current surface exposes; a title, self-report, or accepted request is not backend telemetry.
 
-Classify each actual actor's execution profile from the next substantial action that actor will personally perform. Coordinator, worker, and reviewer profiles are independent and phase-local: reassess an actor when its own work changes materially, not merely because another role has harder work. Choose reviewer profiles from assurance need and review complexity, while keeping reviewer freshness and independence as separate requirements.
+Every mission, reviewer, landing, continuation, and closeout profile record should state the requested profile, `request_state`, observed profile, `resolution_state`, and evidence or source. Keep unknown fields unknown; request acceptance and an observed label are not proof of backend resolution.
+
+Classify each actual actor's execution profile from the next substantial action that actor will personally perform. Coordinator, worker, and reviewer profiles are independent and phase-local: reassess an actor when its own work changes materially, not merely because another role has harder work. A coordinator may remain on a lower profile only while it can critically evaluate receipts and perform its own next judgment. Before consequential synthesis that exceeds that capacity, escalate the coordinator or explicitly transfer synthesis to a capable named actor.
+
+Set the assurance plan independently: reviewer eligibility, freshness, lenses, evidence, and reviewer count come from the required assurance. Then classify each reviewer from that reviewer's own next substantial review action. Reviewer profile strength does not replace any assurance requirement.
 
 ### Steerable missions and semantic report routing
 
@@ -144,9 +148,9 @@ Use nested delegation for bounded work that can return through its requester wit
 
 Visible, multi-hop, or cross-session work should keep one stable Mission ID from dispatch through closeout. A task, thread, session, agent, or other execution address may change without creating a new mission when the objective, authority, and mission owner stay the same. When the semantic route changes, record the old and new address, replacement time and reason, accepting recipient, undelivered payloads, open questions, and receipt state.
 
-When a replacement task or session continues the same delegated path, treat it as a successor renewal rather than a new mission. Carry forward the Mission ID, role, authority, source boundary, branch or work lane, current phase, requested profile when known, changed state, validation state, pending payloads, open questions, and the predecessor's last known status. Transfer active execution responsibility only after the successor accepts that capsule. Keep one active holder for the delegated path; a predecessor that later resumes is stale until the mission owner explicitly reconciles it.
+When a replacement task or session continues the same delegated path, treat it as a successor renewal rather than a new mission. Carry forward the Mission ID, role, authority, source boundary, branch or work lane, branch HEAD, staged changes, unstaged changes, untracked files, ownership of that dirty state, last validation, next safe action, current phase, the full profile record, pending payloads, open questions, and the predecessor's last known status. Transfer active execution responsibility only after the successor accepts that capsule. Keep one active holder for the delegated path; a predecessor that later resumes is stale until the human mission owner or named Coordinator explicitly reconciles it.
 
-If the predecessor failed, became unavailable, or cannot be verified, record that recovery reason and the last confirmed state rather than inferring completion or delivery. Recovery preserves scope and authority; it does not silently restart completed work or broaden the mission.
+If the predecessor failed, became unavailable, or cannot be verified, record that recovery reason and the last confirmed state rather than inferring completion or delivery. Only the human mission owner or named Coordinator may create the failed-task replacement. Recovery preserves scope and authority; it does not silently restart completed work or broaden the mission.
 
 Keep these duties distinct even when one person or task holds several of them:
 
