@@ -112,7 +112,7 @@ Ground Crew Dispatch before edits:
 - Record completion through the named full-payload and/or compact-status route when each role finishes, even if the report is brief.
 - Route by semantic dependency: full work product to the return recipient, compact status to the named supervisory status recipient, and landing receipt to the landing owner when applicable.
 - If direct delivery is unavailable, relay the original payload losslessly with its Mission ID, origin, payload class, intended recipient, evidence pointers, uncertainty, and current route state.
-- If a task address changes, record the route replacement as: Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state.
+- If a task address changes, record the route replacement as: Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state / full successor or recovery capsule, including predecessor status / phase and next action / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source / successor acceptance / active-holder state.
 
 Execution:
 1. Inspect before editing.
@@ -138,7 +138,7 @@ Closeout:
 - Report state: complete / partial / blocked
 - Delivery state: pending / delivered / acknowledged / blocked
 - Receipt or unresolved delivery gap:
-- Route replacements: none / Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state
+- Route replacements: none / Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state / full successor or recovery capsule, including predecessor status / phase and next action / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source / successor acceptance / active-holder state
 - Closeout profile record for each actor: role / phase / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source
 - Reviewer assurance and profile record: eligibility / freshness / lenses / evidence / reviewer count / next substantial review action / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source
 - Landing profile record, if used: phase / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source

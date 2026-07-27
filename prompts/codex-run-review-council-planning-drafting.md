@@ -103,7 +103,7 @@ Coordinator duties:
 9. Label uncertainty instead of inventing facts.
 10. Route each full lane report to its semantic return recipient and send only the required compact status to the named supervisory status recipient.
 11. If direct delivery is unavailable, relay the original payload losslessly with a separate header containing Mission ID, origin, payload class, destination, and current route state.
-12. Record every route replacement as: Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state.
+12. Record every route replacement as: Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state / full successor or recovery capsule, including predecessor status / phase and next action / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source / successor acceptance / active-holder state.
 
 Lane report format:
 - Mission ID:
@@ -143,7 +143,7 @@ Closeout:
 - Report state: complete / partial / blocked
 - Delivery state: pending / delivered / acknowledged / blocked
 - Receipt or unresolved delivery gap:
-- Route replacements: none / Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state
+- Route replacements: none / Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state / full successor or recovery capsule, including predecessor status / phase and next action / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source / successor acceptance / active-holder state
 - Closeout profile record for each actor: role or lane / phase / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source
 - Reviewer assurance and profile record: eligibility / freshness / lenses / evidence / reviewer count / next substantial review action / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source
 - Landing profile record, if used: phase / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source
