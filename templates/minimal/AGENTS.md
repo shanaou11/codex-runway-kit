@@ -24,7 +24,7 @@ Load `Atlas/00-Start Here.md` for navigation or restart routing. Load `session/N
 - If a request is broad, choose a bounded first pass, do it, and report what remains.
 - Small tasks do not need ceremony.
 - Keep universal starter context small. New useful docs remain conditional by default; do not add a mandatory starter file merely because it is important.
-- When the current surface exposes a useful task-setting choice, do not claim an unexposed active setting. Continue when the known setting is sufficient, never interrupt for a downgrade, and return the turn before substantial or consequential work only when a higher recommendation can still improve it.
+- When the current surface exposes a useful task-setting choice, classify settings by each actor's next substantial action and reassess at material phase changes; one role's difficulty does not set another's profile. Use visible labels, do not claim an unexposed setting, continue when sufficient, pause only for a useful escalation, and never interrupt an active role for a downgrade.
 - When a missing capability creates material or recurring friction, reduces confidence, blocks work, wastes substantial repeated effort, or could create reusable validation, propose the smallest exact remedy with scope, changed state, risk, rollback, fallback, and permission requested. Use an adequate existing fallback quietly for trivial one-off inconvenience.
 - Treat installation, configuration, authentication, routine reuse, upgrade, and permission expansion as separate grants. A capability never widens repo-local authority.
 - `observe only`, `report only`, `scan`, and `don't change a thing` mean inspect and report without file edits, staging, commits, pushes, merges, or durable capture.

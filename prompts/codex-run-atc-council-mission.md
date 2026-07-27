@@ -53,22 +53,28 @@ Semantic route:
 - Requesting task and current address:
 - Dispatcher:
 - Worker and current address:
+- Current execution phase:
+- Mission profile record for each active role: requested profile / `request_state` / observed profile / `resolution_state` / evidence or source
 - Supervisory status recipient and current address:
 - Return recipient and current return address:
 - Required payload class: answer-only / evidence packet / implementation handoff / decision packet / closeout report
 - Receipt required: yes/no, with receipt destination
 - Consolidation owner:
 - Landing authority: not granted / exact allowed landing action and target
-- Landing owner, if landing is authorized:
+- Landing owner and current address, if landing is authorized:
+- Landing profile record: requested profile / `request_state` / observed profile / `resolution_state` / evidence or source
+- Direct landing attachment and receipt destination: supported / unavailable / not applicable
 - Cleanup authority: not granted / exact allowed branch, remote-ref, worktree, or destructive actions
 - Cleanup owner:
 - Named cleanup objects:
 
 Delegation wait rule:
 - After a receiver explicitly accepts delegated execution, the sender pauses that delegated path until the receiver reports. Steering and clarification may continue, but duplicate execution may not. Resume only after the report or an explicit return-for-revision handoff.
+- If a replacement task or session continues the same delegated path, carry the Mission ID, role, authority, source boundary, branch or work lane, branch HEAD, staged changes, unstaged changes, untracked files, dirty-state ownership, last validation, next safe action, current phase, pending payloads, open questions, predecessor status, and the continuation profile record: requested profile / `request_state` / observed profile / `resolution_state` / evidence or source. Transfer active execution responsibility only after successor acceptance, and keep one active holder.
+- If the predecessor failed, became unavailable, or cannot be verified, record the recovery reason and last confirmed state. Only the human mission owner or named Coordinator may create the replacement. A predecessor that later resumes is stale until explicit reconciliation.
 
 Visible Council preflight before edits:
-- Mission Chair: restate the mission in plain language.
+- Mission Chair: restate the mission in plain language and confirm that the coordinator can critically evaluate receipts and its own next judgment; otherwise escalate it or explicitly transfer consequential synthesis to a capable named actor.
 - State Keeper: read the current branch, worktree status, local instructions, README, docs index, and directly affected files.
 - Blast Radius Officer: list allowed and forbidden surfaces.
 - Implementation Planner: choose the smallest useful execution phase.
@@ -93,8 +99,12 @@ Ground Crew Dispatch before edits:
 - Give each role a short work order:
   - role name
   - assigned task
+  - current execution phase
+  - profile record: requested profile / `request_state` / observed profile / `resolution_state` / evidence or source
   - allowed surfaces
   - forbidden surfaces
+  - review assurance plan, when the role reviews: eligibility / freshness / lenses / evidence / reviewer count
+  - reviewer profile record based on that reviewer's own next substantial review action: requested profile / `request_state` / observed profile / `resolution_state` / evidence or source
   - expected full-work-product recipient
   - expected supervisory status recipient
   - required payload class and receipt expectation
@@ -102,7 +112,7 @@ Ground Crew Dispatch before edits:
 - Record completion through the named full-payload and/or compact-status route when each role finishes, even if the report is brief.
 - Route by semantic dependency: full work product to the return recipient, compact status to the named supervisory status recipient, and landing receipt to the landing owner when applicable.
 - If direct delivery is unavailable, relay the original payload losslessly with its Mission ID, origin, payload class, intended recipient, evidence pointers, uncertainty, and current route state.
-- If a task address changes, record the route replacement as: Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state.
+- If a task address changes, record the route replacement as: Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state / full successor or recovery capsule, including predecessor status / phase and next action / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source / successor acceptance / active-holder state.
 
 Execution:
 1. Inspect before editing.
@@ -128,7 +138,13 @@ Closeout:
 - Report state: complete / partial / blocked
 - Delivery state: pending / delivered / acknowledged / blocked
 - Receipt or unresolved delivery gap:
-- Route replacements: none / Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state
+- Route replacements: none / Mission ID / old address / new address / replacement time and reason / accepting recipient / undelivered payloads / open questions / receipt state / full successor or recovery capsule, including predecessor status / phase and next action / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source / successor acceptance / active-holder state
+- Closeout profile record for each actor: role / phase / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source
+- Reviewer assurance and profile record: eligibility / freshness / lenses / evidence / reviewer count / next substantial review action / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source
+- Landing profile record, if used: phase / requested profile / `request_state` / observed profile / `resolution_state` / evidence or source
+- Successor or recovery state: none / predecessor status and reason / branch and HEAD / staged, unstaged, and untracked state with ownership / last validation / next safe action / successor acceptance / active execution holder
+- Continuation profile record, if used: requested profile / `request_state` / observed profile / `resolution_state` / evidence or source
+- Direct landing attachment: not applicable / unavailable / delivered / acknowledged, with non-sensitive receipt evidence
 - Agent/lane disposition: work complete and disposed / work complete and disposal unavailable / retained for named same-mission follow-up / blocked or unreported / no delegated lanes used
 - Agent reuse: fresh / same-mission continuation / finding-specific replay; refresh and contamination result
 - Stop conditions or next gate:
