@@ -168,6 +168,10 @@ These duties name responsibility, not authority. Naming a landing owner does not
 
 After a receiver explicitly accepts delegated execution, the sender pauses that delegated path until the receiver reports. The sender may answer steering or clarification, but must not duplicate the accepted work. The sender resumes only after the report or an explicit return-for-revision handoff.
 
+A fail-closed landing stop ends repository mutation, not required lifecycle routing. When correction or renewed evidence is needed, the landing role automatically returns a lossless candidate/reason/correction/evidence packet through the already authorized route unless communication is explicitly forbidden. Responsibility transfers only after acceptance; the landing role must not adapt the candidate, ask the human to perform routine relay, or lose unaffected queued work. If delivery is unavailable, record it as blocked and retain responsibility.
+
+Dirty-state blockers apply to the affected worktree and relevant authority surfaces. An unrelated active or dirty sibling lane may be recorded and preserved while coordination-layer-only doctrine work proceeds; that does not authorize moving, cleaning, aligning, or rebriefing the sibling.
+
 Route reports by semantic dependency rather than by who launched the worker. Send the full work product to the return recipient, compact status to the named supervisory status recipient, and a landing receipt to the landing owner when applicable. If direct delivery is unavailable, relay the original payload without dropping evidence pointers, uncertainty, attachments, or the intended recipient; add a separate header with Mission ID, origin, payload class, destination, and current route state.
 
 Name the landing recipient and its current address when landing is authorized. When the current surface supports direct delivery or attachment, place the approved handoff or landing receipt there and record its receipt state; use a lossless relay only as the fallback. Routing or attachment does not grant landing authority. Keep sensitive task URLs and identifiers out of durable repo notes, using non-sensitive role labels instead.
