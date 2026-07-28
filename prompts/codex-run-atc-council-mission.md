@@ -42,6 +42,7 @@ Forbidden writes:
 
 Stop conditions:
 - The working tree is dirty before work and the changes are not yours or clearly expected.
+- Dirty state in an unrelated preserved sibling lane is not by itself a blocker to coordination-layer-only work; stop when the affected worktree or authority surface overlaps, ownership is unclear, or sibling mutation would be required.
 - Required repo instructions are missing or conflict with this mission.
 - The requested change would touch forbidden surfaces.
 - Required validation cannot be completed or clearly reported.
@@ -70,6 +71,7 @@ Semantic route:
 
 Delegation wait rule:
 - After a receiver explicitly accepts delegated execution, the sender pauses that delegated path until the receiver reports. Steering and clarification may continue, but duplicate execution may not. Resume only after the report or an explicit return-for-revision handoff.
+- If landing stops fail closed because revision or renewed evidence is required, stop repository mutation and automatically return the lossless packet through the existing authorized route. Retain responsibility until acceptance; do not make the human perform routine relay or adapt the candidate in the landing lane.
 - If a replacement task or session continues the same delegated path, carry the Mission ID, role, authority, source boundary, branch or work lane, branch HEAD, staged changes, unstaged changes, untracked files, dirty-state ownership, last validation, next safe action, current phase, pending payloads, open questions, predecessor status, and the continuation profile record: requested profile / `request_state` / observed profile / `resolution_state` / evidence or source. Transfer active execution responsibility only after successor acceptance, and keep one active holder.
 - If the predecessor failed, became unavailable, or cannot be verified, record the recovery reason and last confirmed state. Only the human mission owner or named Coordinator may create the replacement. A predecessor that later resumes is stale until explicit reconciliation.
 
