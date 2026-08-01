@@ -81,10 +81,12 @@ When the current Codex surface exposes a model, reasoning, or task-setting choic
 - Treat the classification as phase-local. Reassess when an actor moves into materially different coordination, implementation, remediation, review, or landing work.
 - A newly delegated role is a new bounded task. It may use a lower adequate setting without interrupting or changing the coordinator's active setting, and difficult delegated work does not by itself require escalating the coordinator.
 - A coordinator may remain on a lower setting only while it can critically evaluate worker receipts and perform its own next judgment. Before consequential synthesis that exceeds that capacity, escalate the coordinator or explicitly transfer synthesis to a capable named actor.
+- Before replacing the coordinator, first ask whether a bounded higher- or lower-profile nested role can perform the separable next action while the coordinator remains qualified to evaluate the receipt. Inside an authorized mission, bounded nested spawning and exposed child-profile selection do not require approval for every spawn; visible top-level task creation remains an explicit user-requested action.
+- Treat model and capability availability as a dated observation of the current runtime, not a permanent requirement. An unavailable named option does not itself pause work when another exposed setting adequately supports the next action.
 - Set the assurance plan first: reviewer eligibility, freshness, lenses, evidence, and reviewer count. Then classify each reviewer independently from that reviewer's own next substantial review action. A stronger reviewer profile does not replace any assurance requirement or make a reused reviewer independent.
 - Continue when the known current setting matches or exceeds the recommendation.
 - Never interrupt an actor's current work to recommend a lower setting; save that suggestion for that actor's next bounded task or phase.
-- When a higher setting can still materially improve substantial investigation, implementation, protected work, cross-repo synthesis, or consequential judgment, return the turn before beginning that work.
+- When a higher setting can still materially improve the coordinator's own substantial investigation, implementation, protected work, cross-repo synthesis, or consequential judgment, return the turn before beginning that work unless the live visible-task creation gate has already been satisfied.
 - If the current setting is unknown, continue bounded reversible work and pause only when the next action is consequential enough that the setting materially affects confidence.
 
 A setting recommendation is advisory. It never expands file, Git, deployment, production, data, authentication, or external-system authority.
