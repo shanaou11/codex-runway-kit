@@ -146,11 +146,13 @@ Set the assurance plan independently: reviewer eligibility, freshness, lenses, e
 
 Use nested delegation for bounded work that can return through its requester without direct human intervention. Use a visible task when the human steering the mission may need to inspect progress, answer a question, correct a misunderstanding, pause, or redirect the work. Declare steering as `none expected`, `exception-only`, or `active`. Steering access is a communication route, not permission to widen scope or authority.
 
+Within an authorized mission, prefer bounded nested delegation for safely separable specialist, checker, and validator work before replacing the coordinator. Nested spawning and exposed child-profile selection do not require approval for every spawn; each child remains inside the mission authority and local law, while child-led recursion remains separately gated. Routing to an existing task is not task creation. Creating a new top-level task remains an explicit user-requested action.
+
 Visible, multi-hop, or cross-session work should keep one stable Mission ID from dispatch through closeout. A task, thread, session, agent, or other execution address may change without creating a new mission when the objective, authority, and mission owner stay the same. When the semantic route changes, record the old and new address, replacement time and reason, accepting recipient, undelivered payloads, open questions, and receipt state.
 
 When a replacement task or session continues the same delegated path, treat it as a successor renewal rather than a new mission. Carry forward the Mission ID, role, authority, source boundary, branch or work lane, branch HEAD, staged changes, unstaged changes, untracked files, ownership of that dirty state, last validation, next safe action, current phase, the full profile record, pending payloads, open questions, and the predecessor's last known status. Transfer active execution responsibility only after the successor accepts that capsule. Keep one active holder for the delegated path; a predecessor that later resumes is stale until the human mission owner or named Coordinator explicitly reconciles it.
 
-If the predecessor failed, became unavailable, or cannot be verified, record that recovery reason and the last confirmed state rather than inferring completion or delivery. Only the human mission owner or named Coordinator may create the failed-task replacement. Recovery preserves scope and authority; it does not silently restart completed work or broaden the mission.
+If the predecessor failed, became unavailable, or cannot be verified, record that recovery reason and the last confirmed state rather than inferring completion or delivery. The human mission owner or named Coordinator may authorize recovery and designate the successor; an agent may route to an existing task or spawn a bounded nested successor inside the authorized mission, while creating a new top-level task remains an explicit user-requested action. Recovery preserves scope and authority; it does not silently restart completed work or broaden the mission.
 
 Keep these duties distinct even when one person or task holds several of them:
 
@@ -205,7 +207,7 @@ For stronger closeout discipline, use two visible final-report lines:
 
 Use `none` only when the run did not reveal a repeatable failure mode, delay, confusion, or risk. Use `applied guard` when the prevention was added in the same run. Use `parked follow-up` when the prevention is too large or needs a later decision.
 
-Durable capture should stay small and repo-local. Use an existing owner surface such as local law, docs, Atlas maps, the next-session handoff, the work queue, a template, or a prompt. Do not create a new memory surface by default. Do not capture when the run is report-only, the owner surface is unclear, the material is sensitive or private, or the capture would broaden the repo's intent.
+Durable capture should stay small and repo-local. A repeatable, actionable, future-relevant lesson, decision, or follow-up may be captured automatically when an approved owner surface is clear and no stop gate applies. Use an existing surface such as local law, docs, Atlas maps, the next-session handoff, the work queue, a template, or a prompt; do not create a new memory surface by default. Recording preserves context and does not approve execution, policy, landing, cleanup, publication, or further mutation. Do not capture when the run is explicitly report-only/no-write/no-capture, the owner surface is unclear, the material is sensitive or private, or the capture would broaden the repo's intent.
 
 A landing report should make the end state easy to review:
 

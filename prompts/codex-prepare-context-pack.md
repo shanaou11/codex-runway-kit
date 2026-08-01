@@ -25,5 +25,5 @@ Include:
 - direct landing attachment and receipt state when supported and authorized
 - next safe action
 
-Use only repo evidence. Mark assumptions as unverified. Only the human mission owner or named Coordinator may create a failed-task replacement, and a later-resuming predecessor stays stale until explicit reconciliation. Keep sensitive task URLs and identifiers out of durable repo notes. Keep the pack short enough to paste into a new session.
+Use only repo evidence. Mark assumptions as unverified. The human mission owner or named Coordinator may authorize recovery and designate a failed-task successor; routing to an existing task or spawning a bounded nested successor is separate from creating a new top-level task, which remains an explicit user-requested action. A later-resuming predecessor stays stale until explicit reconciliation. Keep sensitive task URLs and identifiers out of durable repo notes. Keep the pack short enough to paste into a new session.
 ```

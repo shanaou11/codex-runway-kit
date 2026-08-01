@@ -56,6 +56,7 @@ Do not mention non-public repositories, organizations, projects, examples, or re
 - Small tasks do not need ceremony.
 - Keep universal starter context small. New useful docs remain conditional by default; do not add a mandatory starter file merely because it is important.
 - Follow `docs/09-momentum-and-escalation.md` for task-setting and capability-improvement advice. Classify settings by each actor's next substantial action and reassess at material phase changes; one role's difficulty does not set another's profile. Use visible labels, do not claim an unexposed setting, continue when sufficient, pause only for a useful escalation, and never interrupt an active role for a downgrade.
+- Within an authorized mission, prefer bounded nested delegation for separable specialist, checker, and validator work before replacing the coordinator. When the runtime supports nested agents, spawning inside the mission and selecting an exposed child profile do not require approval for every spawn; each child remains inside the same authority and local law, while child-led recursion remains separately gated. Creating a new top-level task remains an explicit user-requested action.
 - Propose a capability change only for material or recurring friction, reduced confidence, a blocker, substantial repeated effort, or reusable validation. State the exact remedy, scope, changed state, risk, rollback, fallback, and permission requested; do not install, configure, authenticate, upgrade, expand permissions, or add dependencies without the authority required by local law.
 
 ## Cross-Repo Orchestration / Runway Rules
@@ -82,8 +83,8 @@ For repo changes:
 5. For non-trivial work, include a closeout learning loop: note any repeatable failure mode, confusion, or risk discovered; add the smallest reasonable prevention when safe; record a visible follow-up when prevention is too large; or say no useful guard was found.
 6. Include `Learning loop: none`, `Learning loop: applied guard`, or `Learning loop: parked follow-up` in the final report for non-trivial work.
 7. Include `Durable capture: chat-only`, `Durable capture: written at [path]`, `Durable capture: queued at [path]`, or `Durable capture: blocked by stop gate` in the final report for non-trivial work.
-8. When `Learning loop:` is `applied guard` or `parked follow-up`, use the smallest appropriate durable surface already in this repo, such as `docs/`, `Atlas/`, `session/Next session handoff.md`, or `queue/00-work-queue.md`. Do not create a new memory surface by default.
-9. Do not perform durable capture when the run is report-only, the owner surface is unclear, the material is sensitive or private, or the capture would broaden repo intent.
+8. Record-only durable capture may happen automatically when a repeatable, actionable, future-relevant lesson, decision, or follow-up has a clear approved owner surface and no stop gate applies. Use the smallest existing surface, such as `docs/`, `Atlas/`, `session/Next session handoff.md`, or `queue/00-work-queue.md`; do not create a new memory surface by default. Recording preserves context and does not approve execution, policy, landing, cleanup, publication, or further mutation.
+9. Do not perform durable capture when the run is explicitly report-only/no-write/no-capture, the owner surface is unclear, the material is sensitive or private, or the capture would broaden repo intent.
 10. Report cleanup status and avoid leaving unnecessary branch or handoff debt.
 11. Commit with a clear message.
 12. Push the branch to `origin`.

@@ -22,6 +22,7 @@ Steering mode:
 
 Execution surface:
 [Direct / nested delegation / visible task or session. Prefer nested delegation for `none expected`; prefer a visible surface for `exception-only` or `active` when direct human steering may be needed. If the preferred surface is unavailable, name the manual or relay fallback.]
+Inside an authorized mission, bounded nested spawning and exposed child-profile selection do not require approval for every spawn. Child-led recursion remains separately gated, and creating a new top-level task remains an explicit user-requested action.
 
 Target repo:
 [Current repo path or repo name.]
@@ -73,7 +74,7 @@ Delegation wait rule:
 - After a receiver explicitly accepts delegated execution, the sender pauses that delegated path until the receiver reports. Steering and clarification may continue, but duplicate execution may not. Resume only after the report or an explicit return-for-revision handoff.
 - If landing stops fail closed because revision or renewed evidence is required, stop repository mutation and automatically return the lossless packet through the existing authorized route. Retain responsibility until acceptance; do not make the human perform routine relay or adapt the candidate in the landing lane.
 - If a replacement task or session continues the same delegated path, carry the Mission ID, role, authority, source boundary, branch or work lane, branch HEAD, staged changes, unstaged changes, untracked files, dirty-state ownership, last validation, next safe action, current phase, pending payloads, open questions, predecessor status, and the continuation profile record: requested profile / `request_state` / observed profile / `resolution_state` / evidence or source. Transfer active execution responsibility only after successor acceptance, and keep one active holder.
-- If the predecessor failed, became unavailable, or cannot be verified, record the recovery reason and last confirmed state. Only the human mission owner or named Coordinator may create the replacement. A predecessor that later resumes is stale until explicit reconciliation.
+- If the predecessor failed, became unavailable, or cannot be verified, record the recovery reason and last confirmed state. The human mission owner or named Coordinator may authorize recovery and designate the successor; route to an existing task or spawn a nested successor when authorized, but create a new top-level task only after an explicit user request. A predecessor that later resumes is stale until explicit reconciliation.
 
 Visible Council preflight before edits:
 - Mission Chair: restate the mission in plain language and confirm that the coordinator can critically evaluate receipts and its own next judgment; otherwise escalate it or explicitly transfer consequential synthesis to a capable named actor.
@@ -153,7 +154,7 @@ Closeout:
 - Recommended next phase:
 - Uncertainty or gated follow-up:
 - Learning loop: none / applied guard / parked follow-up
-- Durable capture: chat-only / written at [path] / queued at [path] / blocked by stop gate
+- Durable capture: chat-only / written at [path] / queued at [path] / blocked by stop gate. Outside explicit no-write modes, eligible record-only capture may happen automatically on a clear approved surface; recording is not execution, policy, landing, cleanup, or publication approval.
 - Committed: yes/no, with commit hash if yes
 - Pushed: yes/no, with remote branch if yes
 ```
