@@ -49,6 +49,12 @@ Use `AGENTS.md` for stable rules such as:
 
 Local law should stay practical. One-time task notes belong in a mission brief, queue, or handoff rather than becoming permanent repo rules.
 
+### Proportional tool and security review
+
+Plugins and skills are task-shaped aids, not sources of truth, install mandates, or authority grants. Ordinary UI, docs, business-rule, cosmetic admin, and low-risk workflow work should use normal implementation and proportional validation.
+
+Codex Security, when available, follows proportional routing. Meaningful authentication, authorization, permission, trust-boundary, secret-handling, custody, or external attack-surface changes should receive a focused security diff review, normally as a finishing check before publication or landing. A standard security scan should run only when the human mission owner explicitly requests it or the approved mission clearly justifies repository- or component-wide security review. A deep scan should run only when explicitly requested or separately approved for major security work needing exhaustive multi-pass coverage. A security-adjacent label alone is not a scan trigger when access behavior and trust boundaries are unchanged.
+
 ### Conditional starter context
 
 Treat startup context as a constrained interface, not a catalog of every useful file in the repository.
@@ -152,6 +158,8 @@ Visible, multi-hop, or cross-session work should keep one stable Mission ID from
 
 When a replacement task or session continues the same delegated path, treat it as a successor renewal rather than a new mission. Carry forward the Mission ID, role, authority, source boundary, branch or work lane, branch HEAD, staged changes, unstaged changes, untracked files, ownership of that dirty state, last validation, next safe action, current phase, the full profile record, pending payloads, open questions, and the predecessor's last known status. Transfer active execution responsibility only after the successor accepts that capsule. Keep one active holder for the delegated path; a predecessor that later resumes is stale until the human mission owner or named Coordinator explicitly reconciles it.
 
+A message, delegation, relay, route replacement, or successor-task handoff changes only the conversation route. It does not create, select, switch, move, clean, detach, reset, or remove a Git branch or worktree unless that exact Git-lane action is separately authorized. Every repo-grounded handoff should declare `direct/local - same canonical folder`, `attach to existing named worktree - <path and branch>`, or `create new worktree - explicitly authorized <path and branch>`. The receiver verifies cwd, branch, and HEAD before acceptance or mutation and stops on an unexpected generated checkout. Handoff authority alone never supplies cleanup authority.
+
 If the predecessor failed, became unavailable, or cannot be verified, record that recovery reason and the last confirmed state rather than inferring completion or delivery. The human mission owner or named Coordinator may authorize recovery and designate the successor; an agent may route to an existing task or spawn a bounded nested successor inside the authorized mission, while creating a new top-level task remains an explicit user-requested action. Recovery preserves scope and authority; it does not silently restart completed work or broaden the mission.
 
 Keep these duties distinct even when one person or task holds several of them:
@@ -172,7 +180,7 @@ After a receiver explicitly accepts delegated execution, the sender pauses that 
 
 A fail-closed landing stop ends repository mutation, not required lifecycle routing. When correction or renewed evidence is needed, the landing role automatically returns a lossless candidate/reason/correction/evidence packet through the already authorized route unless communication is explicitly forbidden. Responsibility transfers only after acceptance; the landing role must not adapt the candidate, ask the human to perform routine relay, or lose unaffected queued work. If delivery is unavailable, record it as blocked and retain responsibility.
 
-Dirty-state blockers apply to the affected worktree and relevant authority surfaces. An unrelated active or dirty sibling lane may be recorded and preserved while coordination-layer-only doctrine work proceeds; that does not authorize moving, cleaning, aligning, or rebriefing the sibling.
+Dirty-state blockers apply to the selected worktree and exact prohibited actions. Active, dirty, or overlapping sibling lanes may be recorded and preserved while isolated doctrine work proceeds in a separately authorized safe lane. Overlap informs merge coordination and landing order; it is not an all-lanes-clear gate and does not authorize moving, cleaning, aligning, rebriefing, or mutating the sibling.
 
 Route reports by semantic dependency rather than by who launched the worker. Send the full work product to the return recipient, compact status to the named supervisory status recipient, and a landing receipt to the landing owner when applicable. If direct delivery is unavailable, relay the original payload without dropping evidence pointers, uncertainty, attachments, or the intended recipient; add a separate header with Mission ID, origin, payload class, destination, and current route state.
 

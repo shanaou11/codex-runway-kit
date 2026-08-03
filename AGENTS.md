@@ -58,6 +58,8 @@ Do not mention non-public repositories, organizations, projects, examples, or re
 - Follow `docs/09-momentum-and-escalation.md` for task-setting and capability-improvement advice. Classify settings by each actor's next substantial action and reassess at material phase changes; one role's difficulty does not set another's profile. Use visible labels, do not claim an unexposed setting, continue when sufficient, pause only for a useful escalation, and never interrupt an active role for a downgrade.
 - Within an authorized mission, prefer bounded nested delegation for separable specialist, checker, and validator work before replacing the coordinator. When the runtime supports nested agents, spawning inside the mission and selecting an exposed child profile do not require approval for every spawn; each child remains inside the same authority and local law, while child-led recursion remains separately gated. Creating a new top-level task remains an explicit user-requested action.
 - Propose a capability change only for material or recurring friction, reduced confidence, a blocker, substantial repeated effort, or reusable validation. State the exact remedy, scope, changed state, risk, rollback, fallback, and permission requested; do not install, configure, authenticate, upgrade, expand permissions, or add dependencies without the authority required by local law.
+- Keep Codex Security and other security review proportional. Ordinary UI, docs, business-rule, cosmetic admin, and low-risk workflow work uses normal implementation and validation. Meaningful authentication, authorization, permission, trust-boundary, secret-handling, custody, or external attack-surface changes receive a focused security diff review, normally as a finishing check; standard and deep scans require an explicit request or separately approved security justification.
+- A message, delegation, relay, route replacement, or successor-task handoff changes only the conversation route. It must declare direct/local canonical attachment, an existing named worktree, or explicitly authorized worktree creation and does not itself create, select, move, clean, or remove a Git lane. Stop before repository work when the opened cwd does not match the declared attachment.
 
 ## Cross-Repo Orchestration / Runway Rules
 
@@ -67,6 +69,7 @@ This repo can participate in autonomous cross-repo Codex orchestration through a
 - A mission brief may narrow work for a run, but it does not silently replace repo-local law.
 - Source truth stays in this repo. Cross-repo reports should summarize and point to local docs rather than duplicate them.
 - Target repos, or ground sites, remain the source of truth for their own code, docs, tests, configuration, and local rules.
+- Active, dirty, or overlapping sibling lanes are coordination inputs, not an all-lanes-clear gate. Preserve them unchanged and use a separately authorized safe lane; block only unsafe mutation of the selected checkout or an exact prohibited action, then reconcile conflicts during landing.
 - The requested autonomy level controls what Codex may do here. Report-only mode must not edit this repo.
 - Level 1 low-risk docs hygiene is allowed only when the prompt explicitly selects that level.
 - Higher-risk documentation refactors require checker and validator gates plus explicit authorization where local rules require it.
